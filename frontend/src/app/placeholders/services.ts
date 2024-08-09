@@ -1,0 +1,47 @@
+export const dummyServices = [
+    {
+        id: "1",
+        name: "ABC Constructions",
+        location: "Kolkata",
+        locationUrl: "",
+        contact: "+919944111403",
+        machineType: "Excavator",
+        date: new Date("2021-09-01"),
+    },
+    {
+        id: "2",
+        name: "XYZ Builders",
+        location: "Mumbai",
+        locationUrl: "",
+        contact: "+919944111404",
+        machineType: "Bulldozer",
+        date: new Date("2021-10-15"),
+    },
+    {
+        id: "3",
+        name: "LMN Contractors",
+        location: "Delhi",
+        locationUrl: "",
+        contact: "+919944111405",
+        machineType: "Crane",
+        date: new Date("2021-11-20"),
+    },
+    {
+        id: "4",
+        name: "OPQ Developers",
+        location: "Chennai",
+        locationUrl: "",
+        contact: "+919944111406",
+        machineType: "Loader",
+        date: new Date("2021-12-05"),
+    },
+    {
+        id: "5",
+        name: "RST Engineering",
+        location: "Bangalore",
+        locationUrl: "",
+        contact: "+919944111407",
+        machineType: "Grader",
+        date: new Date("2022-01-10"),
+    }
+];
