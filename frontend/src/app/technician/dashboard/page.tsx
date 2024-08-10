@@ -14,9 +14,11 @@ import {
 import { formatDate } from "@/lib/utils";
 import { serviceType } from "@/types/types";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const TechnicianDashboardPage = () => {
+  const router = useRouter();
   const [services, setServices] = useState<serviceType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState(null);
@@ -33,7 +35,9 @@ const TechnicianDashboardPage = () => {
       setLoading(false);
     }
   };
-  const handleClick = (id: string) => {};
+  const handleClick = (id: string) => {
+    window.open(`/technician/service/${id}`);
+  };
   useEffect(() => {
     getData();
   }, []);
