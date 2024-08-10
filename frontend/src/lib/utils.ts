@@ -6,8 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 
-export const formatDate = (date: Date): string => {
-  return date.toLocaleDateString('en-GB', {
+export const formatDate = (date: string): string => {
+  const newDate = new Date(date);
+  return newDate.toLocaleDateString('en-GB', {
     day: '2-digit',
     month: 'short',
     year: 'numeric'

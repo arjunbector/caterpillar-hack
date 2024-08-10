@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
@@ -16,6 +16,16 @@ const ExteriorForm = ({ formData, setFormData }: Props) => {
   } = useForm({ mode: "all" });
   const [damage, setDamage] = useState("no");
   const [oilLeak, setOilLeak] = useState("no");
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      exterior: {
+        ...prev.exterior,
+        damage,
+        oilLeak,
+      },
+    }));
+  }, [damage, oilLeak]);
   return (
     <div>
       <form className="my-10 flex flex-col gap-10">
@@ -62,7 +72,18 @@ const ExteriorForm = ({ formData, setFormData }: Props) => {
         </div>
         <div>
           <Label htmlFor="summary">Overall Summary</Label>
-          <Textarea id="summary" rows={10} placeholder="Max 1000 characters" />
+          <Textarea
+            value={formData.exterior?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                exterior: { ...prev.exterior, summary: e.target.value },
+              }));
+            }}
+            id="summary"
+            rows={10}
+            placeholder="Max 1000 characters"
+          />
         </div>
       </form>
     </div>

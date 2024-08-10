@@ -18,6 +18,7 @@ const ServiceFormPage = ({ params }: Props) => {
   const [page, setPage] = useState(1);
   const [pageReloaded, setPageReloaded] = useState(false);
   const [formData, setFormData] = useState({
+    id: params.id,
     header: {
       model: "",
       inspectionId: "",
@@ -74,6 +75,7 @@ const ServiceFormPage = ({ params }: Props) => {
   });
   useEffect(() => {
     if (pageReloaded) {
+      console.log("setting local storage");
       localStorage.setItem("formData", JSON.stringify(formData));
     }
   }, [formData, pageReloaded]);
@@ -85,11 +87,13 @@ const ServiceFormPage = ({ params }: Props) => {
       );
       console.log("setting form data");
       console.log("local", localFormData);
+      if (localFormData.id !== params.id) return;
       setFormData(localFormData);
     }
     setPageReloaded(true);
   }, []);
 
+  const submitForm = async ()=>{}
   return (
     <main>
       <MaxWidthWrapper className="py-10">

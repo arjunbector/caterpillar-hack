@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { ChevronsUpDown } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
@@ -25,6 +25,17 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
   const [waterLevel, setWaterLevel] = useState("Good");
   const [batteryDamage, setBatteryDamage] = useState("no");
   const [batteryLeak, setBatteryLeak] = useState("no");
+  useEffect(()=>{
+    setFormData((prev:any)=>({
+      ...prev,
+      battery:{
+        ...prev.battery,
+        waterLevel,
+        batteryDamage,
+        batteryLeak
+      }
+    }))
+  },[waterLevel, batteryDamage, batteryLeak])
   return (
     <div>
       <form className="my-10 flex flex-col gap-5">
@@ -35,6 +46,13 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             id="batteryMake"
             placeholder="Ex: CAT"
             type="text"
+            value={formData.battery?.batteryMake}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: { ...prev.battery, batteryMake: e.target.value },
+              }));
+            }}
           />
         </div>
         <div>
@@ -45,6 +63,13 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             {...register("batteryReplacementDate")}
             id="batteryReplacementDate"
             type="date"
+            value={formData.battery?.batteryReplacementDate}
+            onChange={(e)=>{
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: { ...prev.battery, batteryReplacementDate: e.target.value },
+              }));
+            }}
           />
         </div>
         <div>
@@ -53,6 +78,13 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             {...register("batteryVoltage")}
             id="batteryVoltage"
             type="text"
+            value={formData.battery?.batteryVoltage}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: { ...prev.battery, batteryVoltage: e.target.value },
+              }));
+            }}
           />
         </div>
         <div>
@@ -139,6 +171,13 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             {...register("summary")}
             rows={10}
             placeholder="Max 1000 characters"
+            value={formData.battery?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: { ...prev.battery, summary: e.target.value },
+              }));
+            }}
           />
         </div>
       </form>

@@ -7,18 +7,22 @@ export async function POST(req: NextRequest) {
     await dbConnect();
 
     // Assuming the request contains name, email, consent, and userId
-    const { name, email,  } = await req.json() as {
+    const { name, location, locationUrl, contact, machineType, date } = await req.json() as {
       name: string;
-      email: string;
- 
-    
+      location: string;
+      locationUrl?: string;
+      contact: string;
+      machineType: string;
+      date: Date;
     };
 
     const newUser = new Users({
-
       name,
-      email,
-     
+      location,
+      locationUrl,
+      contact,
+      machineType,
+      date,
     });
 
     await newUser.save();
@@ -30,4 +34,15 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     return NextResponse.json({ message: (error as Error).message }, { status: 500 });
   }
+}
+
+export async function GET() {
+  try {
+    await dbConnect();
+    const users = await Users.find();
+    return NextResponse.json(users, { status: 200 });
+  } catch (error) {
+    return NextResponse.json({ message: (error as Error).message }, { status: 500 });
+  }
+
 }

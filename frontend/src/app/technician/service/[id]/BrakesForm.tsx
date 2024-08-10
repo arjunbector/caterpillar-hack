@@ -8,7 +8,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { ChevronsUpDown } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
@@ -18,6 +18,23 @@ const BrakesForm = ({ formData, setFormData }: Props) => {
   const [brakeConditionFront, setBrakeConditionFront] = useState("Good");
   const [brakeConditionRear, setBrakeConditionRear] = useState("Good");
   const [emergencyBrake, setEmergencyBrake] = useState("Good");
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      brakes: {
+        ...prev.brakes,
+        brakeFluidLevel,
+        brakeConditionFront,
+        brakeConditionRear,
+        emergencyBrake,
+      },
+    }));
+  }, [
+    brakeFluidLevel,
+    brakeConditionFront,
+    brakeConditionRear,
+    emergencyBrake,
+  ]);
 
   return (
     <div>
@@ -184,7 +201,18 @@ const BrakesForm = ({ formData, setFormData }: Props) => {
         </div>
         <div>
           <Label htmlFor="summary">Overall Summary</Label>
-          <Textarea id="summary" rows={10} placeholder="Max 1000 characters" />
+          <Textarea
+            value={formData.brakes?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                brakes: { ...prev.brakes, summary: e.target.value },
+              }));
+            }}
+            id="summary"
+            rows={10}
+            placeholder="Max 1000 characters"
+          />
         </div>
       </form>
     </div>

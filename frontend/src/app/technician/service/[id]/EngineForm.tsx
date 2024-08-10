@@ -1,7 +1,8 @@
+import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
@@ -13,7 +14,27 @@ const EngineForm = ({ formData, setFormData }: Props) => {
   const [brakeFluidCondition, setBrakeFluidCondition] = useState("Good");
   const [brakeFluidColor, setBrakeFluidColor] = useState("Clean");
   const [oilLeak, setOilLeak] = useState("no");
-
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      engine: {
+        ...prev.engine,
+        damage,
+        engineOilCondition,
+        engineOilColor,
+        brakeFluidCondition,
+        brakeFluidColor,
+        oilLeak,
+      },
+    }));
+  }, [
+    damage,
+    engineOilCondition,
+    engineOilColor,
+    brakeFluidCondition,
+    brakeFluidColor,
+    oilLeak,
+  ]);
   return (
     <div>
       <form className="flex flex-col gap-10">
@@ -135,7 +156,21 @@ const EngineForm = ({ formData, setFormData }: Props) => {
         </div>
         <div>
           <Label htmlFor="summary">Overall Summary</Label>
-          <Textarea id="summary" rows={10} placeholder="Max 1000 characters" />
+          <Textarea
+            value={formData.engine?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                engine: { ...prev.engine, summary: e.target.value },
+              }));
+            }}
+            id="summary"
+            rows={10}
+            placeholder="Max 1000 characters"
+          />
+        </div>
+        <div className="flex justify-end">
+          <Button>Submit</Button>
         </div>
       </form>
     </div>

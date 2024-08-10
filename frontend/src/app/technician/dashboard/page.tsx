@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/table";
 import { formatDate } from "@/lib/utils";
 import { serviceType } from "@/types/types";
+import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -27,7 +28,11 @@ const TechnicianDashboardPage = () => {
     setLoading(true);
     try {
       //TODO: make api call
-      setServices(dummyServices);
+      const res = await axios.get("/api/dashboard");
+      if (res.status === 200) {
+        setServices(res.data);
+        console.log(res.data);
+      }
     } catch (err: any) {
       console.log(err);
       setError(err);
