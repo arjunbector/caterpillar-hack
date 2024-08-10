@@ -2,8 +2,11 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import React, { useState } from "react";
-
-const EngineForm = () => {
+type Props = {
+  formData: any;
+  setFormData: React.Dispatch<React.SetStateAction<any>>;
+};
+const EngineForm = ({ formData, setFormData }: Props) => {
   const [damage, setDamage] = useState("no");
   const [engineOilCondition, setEngineOilCondition] = useState("Good");
   const [engineOilColor, setEngineOilColor] = useState("Clean");

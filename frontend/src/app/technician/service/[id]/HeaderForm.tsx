@@ -9,9 +9,11 @@ type Props = {
   id: string;
   page: number;
   setPage: Dispatch<SetStateAction<number>>;
+  formData: any;
+  setFormData: Dispatch<SetStateAction<any>>;
 };
 
-const HeaderForm = ({ id, page, setPage }: Props) => {
+const HeaderForm = ({ id, page, setPage, formData, setFormData }: Props) => {
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
 
   useEffect(() => {
@@ -44,7 +46,7 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the basic details</h1>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={onSubmit}
         className="my-10 space-y-5 md:grid md:grid-cols-2 md:gap-10 md:space-y-0"
       >
         <div>
@@ -53,6 +55,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             {...register("model", { required: "Model is required" })}
             type="text"
             id="model"
+            value={formData.header?.model}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, model: e.target.value },
+              }));
+            }}
           />
           {errors.model && (
             <CustomFormError>{errors.model.message}</CustomFormError>
@@ -76,6 +85,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             })}
             type="text"
             id="inspectorName"
+            value={formData.header?.inspectorName}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, inspectorName: e.target.value },
+              }));
+            }}
           />
           {errors.inspectorName && (
             <CustomFormError>{errors.inspectorName.message}</CustomFormError>
@@ -89,6 +105,16 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             })}
             type="text"
             id="inspectionEmployeeId"
+            value={formData.header?.inspectionEmployeeId}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: {
+                  ...prev.header,
+                  inspectionEmployeeId: e.target.value,
+                },
+              }));
+            }}
           />
           {errors.inspectionEmployeeId && (
             <CustomFormError>
@@ -102,6 +128,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             {...register("date", { required: "Date is required" })}
             type="date"
             id="date"
+            value={formData.header?.date}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, date: e.target.value },
+              }));
+            }}
           />
           {errors.date && (
             <CustomFormError>{errors.date.message}</CustomFormError>
@@ -113,6 +146,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             {...register("time", { required: "Time is required" })}
             type="time"
             id="time"
+            value={formData.header?.time}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, time: e.target.value },
+              }));
+            }}
           />
           {errors.time && (
             <CustomFormError>{errors.time.message}</CustomFormError>
@@ -124,6 +164,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             {...register("location", { required: "Location is required" })}
             type="text"
             id="location"
+            value={formData.header?.location}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, location: e.target.value },
+              }));
+            }}
           />
           {errors.location && (
             <CustomFormError>{errors.location.message}</CustomFormError>
@@ -141,6 +188,12 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
                 type="text"
                 id="latitude"
                 value={position.latitude.toString()}
+                onChange={(e) => {
+                  setPosition((prev) => ({
+                    ...prev,
+                    latitude: parseFloat(e.target.value),
+                  }));
+                }}
               />
               {errors.latitude && (
                 <CustomFormError>{errors.latitude.message}</CustomFormError>
@@ -155,6 +208,12 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
                 type="text"
                 id="longitude"
                 value={position.longitude.toString()}
+                onChange={(e) => {
+                  setPosition((prev) => ({
+                    ...prev,
+                    longitude: parseFloat(e.target.value),
+                  }));
+                }}
               />
               {errors.longitude && (
                 <CustomFormError>{errors.longitude.message}</CustomFormError>
@@ -172,6 +231,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             })}
             type="text"
             id="meterHours"
+            value={formData.header?.meterHours}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, meterHours: e.target.value },
+              }));
+            }}
           />
           {errors.meterHours && (
             <CustomFormError>{errors.meterHours.message}</CustomFormError>
@@ -185,6 +251,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             })}
             type="text"
             id="customerName"
+            value={formData.header?.customerName}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, customerName: e.target.value },
+              }));
+            }}
           />
           {errors.customerName && (
             <CustomFormError>{errors.customerName.message}</CustomFormError>
@@ -198,6 +271,13 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
             })}
             type="text"
             id="catCustomerId"
+            value={formData.header?.catCustomerId}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                header: { ...prev.header, catCustomerId: e.target.value },
+              }));
+            }}
           />
           {errors.catCustomerId && (
             <CustomFormError>{errors.catCustomerId.message}</CustomFormError>

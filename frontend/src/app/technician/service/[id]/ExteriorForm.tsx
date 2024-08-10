@@ -4,8 +4,11 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
-const ExteriorForm = () => {
+type Props = {
+  formData: any;
+  setFormData: React.Dispatch<React.SetStateAction<any>>;
+};
+const ExteriorForm = ({ formData, setFormData }: Props) => {
   const {
     register,
     formState: { errors },
