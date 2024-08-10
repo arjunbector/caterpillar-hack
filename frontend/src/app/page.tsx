@@ -1,4 +1,9 @@
 
 export default function Home() {
-  return <main>caterpillar-hack</main>;
+  return <main>
+ 
+    <h1>caterpillar</h1>
+
+    <VoiceActivation/>
+  </main>;
 }
