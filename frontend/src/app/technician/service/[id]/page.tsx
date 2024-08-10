@@ -15,7 +15,7 @@ type Props = {
 };
 
 const ServiceFormPage = ({ params }: Props) => {
-  const [page, setPage] = useState(2);
+  const [page, setPage] = useState(1);
   return (
     <main>
       <MaxWidthWrapper className="py-10">
