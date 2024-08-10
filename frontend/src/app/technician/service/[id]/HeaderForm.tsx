@@ -11,9 +11,19 @@ type Props = {
   setPage: Dispatch<SetStateAction<number>>;
   formData: any;
   setFormData: Dispatch<SetStateAction<any>>;
+  currentTab: string;
+  setCuurentTab: Dispatch<SetStateAction<string>>;
 };
 
-const HeaderForm = ({ id, page, setPage, formData, setFormData }: Props) => {
+const HeaderForm = ({
+  id,
+  page,
+  setPage,
+  formData,
+  setFormData,
+  currentTab,
+  setCuurentTab,
+}: Props) => {
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
 
   useEffect(() => {
@@ -38,7 +48,8 @@ const HeaderForm = ({ id, page, setPage, formData, setFormData }: Props) => {
 
   const onSubmit = (data: any) => {
     //TODO: send data to the server
-    setPage((prev) => prev + 1);
+    // setPage((prev) => prev + 1);
+    setCuurentTab("tires");
     console.log(data);
   };
 

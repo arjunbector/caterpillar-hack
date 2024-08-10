@@ -15,8 +15,15 @@ import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCurrentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const BatteryForm = ({ formData, setFormData }: Props) => {
+const BatteryForm = ({
+  formData,
+  setFormData,
+  currentTab,
+  setCurrentTab,
+}: Props) => {
   const {
     register,
     formState: { errors },
@@ -25,20 +32,24 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
   const [waterLevel, setWaterLevel] = useState("Good");
   const [batteryDamage, setBatteryDamage] = useState("no");
   const [batteryLeak, setBatteryLeak] = useState("no");
-  useEffect(()=>{
-    setFormData((prev:any)=>({
+  useEffect(() => {
+    setFormData((prev: any) => ({
       ...prev,
-      battery:{
+      battery: {
         ...prev.battery,
         waterLevel,
         batteryDamage,
-        batteryLeak
-      }
-    }))
-  },[waterLevel, batteryDamage, batteryLeak])
+        batteryLeak,
+      },
+    }));
+  }, [waterLevel, batteryDamage, batteryLeak]);
+  const handleFormSubmit = (e:any) => {
+    e.preventDefault();
+    setCurrentTab("exterior");
+  };
   return (
     <div>
-      <form className="my-10 flex flex-col gap-5">
+      <form className="my-10 flex flex-col gap-5" onSubmit={handleFormSubmit}>
         <div>
           <Label htmlFor="batteryMake">Battery Make</Label>
           <Input
@@ -64,10 +75,13 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             id="batteryReplacementDate"
             type="date"
             value={formData.battery?.batteryReplacementDate}
-            onChange={(e)=>{
+            onChange={(e) => {
               setFormData((prev: any) => ({
                 ...prev,
-                battery: { ...prev.battery, batteryReplacementDate: e.target.value },
+                battery: {
+                  ...prev.battery,
+                  batteryReplacementDate: e.target.value,
+                },
               }));
             }}
           />
@@ -179,6 +193,9 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
               }));
             }}
           />
+        </div>
+        <div className="flex justify-end">
+          <Button>Next</Button>
         </div>
       </form>
     </div>

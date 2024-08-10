@@ -12,8 +12,15 @@ import { useEffect, useState } from "react";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCurrentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const BrakesForm = ({ formData, setFormData }: Props) => {
+const BrakesForm = ({
+  formData,
+  setFormData,
+  currentTab,
+  setCurrentTab,
+}: Props) => {
   const [brakeFluidLevel, setBrakeFluidLevel] = useState("Good");
   const [brakeConditionFront, setBrakeConditionFront] = useState("Good");
   const [brakeConditionRear, setBrakeConditionRear] = useState("Good");
@@ -35,10 +42,13 @@ const BrakesForm = ({ formData, setFormData }: Props) => {
     brakeConditionRear,
     emergencyBrake,
   ]);
-
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+    setCurrentTab("engine");
+  };
   return (
     <div>
-      <form className="my-10 flex flex-col gap-10">
+      <form className="my-10 flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <Label className="mr-2">Brake Fluid Level: </Label>
           <DropdownMenu>
@@ -213,6 +223,9 @@ const BrakesForm = ({ formData, setFormData }: Props) => {
             rows={10}
             placeholder="Max 1000 characters"
           />
+        </div>
+        <div className="flex justify-end">
+          <Button>Next</Button>
         </div>
       </form>
     </div>

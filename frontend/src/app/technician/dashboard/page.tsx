@@ -23,6 +23,7 @@ const TechnicianDashboardPage = () => {
   const [services, setServices] = useState<serviceType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState(null);
+  console.log(services);
   const getData = async () => {
     setError(null);
     setLoading(true);
@@ -66,10 +67,10 @@ const TechnicianDashboardPage = () => {
                 <TableBody>
                   {services.map((service, idx) => (
                     <TableRow
-                      key={service.id}
+                      key={service._id}
                       className="cursor-pointer"
                       onClick={() => {
-                        handleClick(service.id);
+                        handleClick(service._id!.toString());
                       }}
                     >
                       <TableCell className="px-10">{service.name}</TableCell>

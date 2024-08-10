@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -7,8 +8,10 @@ import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab:string;
+  setCurrentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const ExteriorForm = ({ formData, setFormData }: Props) => {
+const ExteriorForm = ({ formData, setFormData, currentTab, setCurrentTab }: Props) => {
   const {
     register,
     formState: { errors },
@@ -26,9 +29,13 @@ const ExteriorForm = ({ formData, setFormData }: Props) => {
       },
     }));
   }, [damage, oilLeak]);
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+    setCurrentTab("brakes");
+  };
   return (
     <div>
-      <form className="my-10 flex flex-col gap-10">
+      <form className="my-10 flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <Label>
             Rust, Dent or Damage to Exterior:{" "}
@@ -84,6 +91,9 @@ const ExteriorForm = ({ formData, setFormData }: Props) => {
             rows={10}
             placeholder="Max 1000 characters"
           />
+        </div>
+        <div className="flex justify-end">
+          <Button>Next</Button>
         </div>
       </form>
     </div>

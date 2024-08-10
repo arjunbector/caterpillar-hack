@@ -15,8 +15,10 @@ import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCuurentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const TireForm = ({ formData, setFormData }: Props) => {
+const TireForm = ({ formData, setFormData, currentTab, setCuurentTab }: Props) => {
   const {
     register,
     formState: { errors },
@@ -40,10 +42,14 @@ const TireForm = ({ formData, setFormData }: Props) => {
       },
     }));
   }, [tireConditions]);
+  const handleFormSubmit = (e:any)=>{
+    e.preventDefault();
+    setCuurentTab("battery")
+  }
   return (
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the tire details</h1>
-      <form className="flex flex-col gap-10">
+      <form className="flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <h1 className="my-2 text-lg font-semibold">Tire Pressure</h1>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -351,6 +357,7 @@ const TireForm = ({ formData, setFormData }: Props) => {
             </div>
           </div>
         </div>
+        <div className="flex justify-end"><Button>Next</Button></div>
       </form>
     </div>
   );

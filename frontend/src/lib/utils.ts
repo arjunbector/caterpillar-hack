@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 
-export const formatDate = (date: string): string => {
+export const formatDate = (date: any): string => {
   const newDate = new Date(date);
   return newDate.toLocaleDateString('en-GB', {
     day: '2-digit',

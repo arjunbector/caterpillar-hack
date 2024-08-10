@@ -6,8 +6,17 @@ import React, { useEffect, useState } from "react";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  loading: boolean;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  submitForm: (e: any) => Promise<void>;
 };
-const EngineForm = ({ formData, setFormData }: Props) => {
+const EngineForm = ({
+  formData,
+  setFormData,
+  loading,
+  setLoading,
+  submitForm,
+}: Props) => {
   const [damage, setDamage] = useState("no");
   const [engineOilCondition, setEngineOilCondition] = useState("Good");
   const [engineOilColor, setEngineOilColor] = useState("Clean");
@@ -37,7 +46,7 @@ const EngineForm = ({ formData, setFormData }: Props) => {
   ]);
   return (
     <div>
-      <form className="flex flex-col gap-10">
+      <form className="flex flex-col gap-10" onSubmit={submitForm}>
         <div>
           <Label>Rust, Dents or Damage in Engine</Label>
           <RadioGroup
@@ -170,7 +179,7 @@ const EngineForm = ({ formData, setFormData }: Props) => {
           />
         </div>
         <div className="flex justify-end">
-          <Button>Submit</Button>
+          <Button disabled={loading}>{loading ? "Submitting..." : "Submit"}</Button>
         </div>
       </form>
     </div>
