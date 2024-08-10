@@ -208,6 +208,7 @@ const ServiceFormPage = ({ params }: Props) => {
             setFormData={setFormData}
             loading={loading}
             setLoading={setLoading}
+            setCurrentTab={setCurrentTab}
             submitForm={submitForm}
           />
         )}

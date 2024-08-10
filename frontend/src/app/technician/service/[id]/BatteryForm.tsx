@@ -49,6 +49,8 @@ const BatteryForm = ({
   };
   return (
     <div>
+      <h1 className="mt-10 text-3xl font-bold">Enter the battery details</h1>
+
       <form className="my-10 flex flex-col gap-5" onSubmit={handleFormSubmit}>
         <div>
           <Label htmlFor="batteryMake">Battery Make</Label>
@@ -194,8 +196,9 @@ const BatteryForm = ({
             }}
           />
         </div>
-        <div className="flex justify-end">
-          <Button>Next</Button>
+        <div className="flex justify-end gap-5">
+          <Button variant="secondary" onClick={()=>{setCurrentTab("tires")}}>Back</Button>
+          <Button type="submit">Next</Button>
         </div>
       </form>
     </div>

@@ -9,6 +9,7 @@ type Props = {
   loading: boolean;
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   submitForm: (e: any) => Promise<void>;
+  setCurrentTab: React.Dispatch<React.SetStateAction<string>>;
 };
 const EngineForm = ({
   formData,
@@ -16,6 +17,7 @@ const EngineForm = ({
   loading,
   setLoading,
   submitForm,
+  setCurrentTab,
 }: Props) => {
   const [damage, setDamage] = useState("no");
   const [engineOilCondition, setEngineOilCondition] = useState("Good");
@@ -46,7 +48,8 @@ const EngineForm = ({
   ]);
   return (
     <div>
-      <form className="flex flex-col gap-10" onSubmit={submitForm}>
+      <h1 className="mt-10 text-3xl font-bold">Enter the engine details</h1>
+      <form className="my-10 flex flex-col gap-10" onSubmit={submitForm}>
         <div>
           <Label>Rust, Dents or Damage in Engine</Label>
           <RadioGroup
@@ -178,8 +181,19 @@ const EngineForm = ({
             placeholder="Max 1000 characters"
           />
         </div>
-        <div className="flex justify-end">
-          <Button disabled={loading}>{loading ? "Submitting..." : "Submit"}</Button>
+        <div className="flex justify-end gap-5">
+          <Button
+            variant="secondary"
+            disabled={loading}
+            onClick={() => {
+              setCurrentTab("brakes");
+            }}
+          >
+            Back
+          </Button>
+          <Button disabled={loading}>
+            {loading ? "Submitting..." : "Submit"}
+          </Button>
         </div>
       </form>
     </div>

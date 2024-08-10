@@ -48,6 +48,7 @@ const BrakesForm = ({
   };
   return (
     <div>
+      <h1 className="mt-10 text-3xl font-bold">Enter the brakes details</h1>
       <form className="my-10 flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <Label className="mr-2">Brake Fluid Level: </Label>
@@ -224,8 +225,16 @@ const BrakesForm = ({
             placeholder="Max 1000 characters"
           />
         </div>
-        <div className="flex justify-end">
-          <Button>Next</Button>
+        <div className="flex justify-end gap-5">
+          <Button
+            variant="secondary"
+            onClick={() => {
+              setCurrentTab("exterior");
+            }}
+          >
+            Back
+          </Button>
+          <Button type="submit">Next</Button>
         </div>
       </form>
     </div>

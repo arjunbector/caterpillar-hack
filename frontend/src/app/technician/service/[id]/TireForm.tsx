@@ -18,7 +18,12 @@ type Props = {
   currentTab: string;
   setCuurentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const TireForm = ({ formData, setFormData, currentTab, setCuurentTab }: Props) => {
+const TireForm = ({
+  formData,
+  setFormData,
+  currentTab,
+  setCuurentTab,
+}: Props) => {
   const {
     register,
     formState: { errors },
@@ -42,10 +47,10 @@ const TireForm = ({ formData, setFormData, currentTab, setCuurentTab }: Props) =
       },
     }));
   }, [tireConditions]);
-  const handleFormSubmit = (e:any)=>{
+  const handleFormSubmit = (e: any) => {
     e.preventDefault();
-    setCuurentTab("battery")
-  }
+    setCuurentTab("battery");
+  };
   return (
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the tire details</h1>
@@ -357,7 +362,17 @@ const TireForm = ({ formData, setFormData, currentTab, setCuurentTab }: Props) =
             </div>
           </div>
         </div>
-        <div className="flex justify-end"><Button>Next</Button></div>
+        <div className="flex justify-end gap-5">
+          <Button
+            variant="secondary"
+            onClick={() => {
+              setCuurentTab("header");
+            }}
+          >
+            Back
+          </Button>
+          <Button type="submit">Next</Button>
+        </div>
       </form>
     </div>
   );
