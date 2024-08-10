@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import VoiceActivation from "../../../voicereco";
 
 type Props = {
   id: string;
@@ -13,6 +14,7 @@ type Props = {
 
 const HeaderForm = ({ id, page, setPage }: Props) => {
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
+  const [isVoiceActivated, setIsVoiceActivated] = useState(false);
 
   useEffect(() => {
     if ("geolocation" in navigator) {
@@ -26,6 +28,7 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
       console.log("Geolocation is not available in your browser.");
     }
   }, []);
+
   const {
     register,
     formState: { errors },
@@ -35,14 +38,24 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
   });
 
   const onSubmit = (data: any) => {
-    //TODO: send data to the server
+    // TODO: send data to the server
     setPage((prev) => prev + 1);
     console.log(data);
+  };
+
+  const handleVoiceCommand = (command: string) => {
+    // Handle voice commands if needed
+    console.log("Voice command received:", command);
+    if (command.toLowerCase() === "submit") {
+      handleSubmit(onSubmit)();
+    }
   };
 
   return (
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the basic details</h1>
+      <VoiceActivation onCommand={handleVoiceCommand} />
+
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="my-10 space-y-5 md:grid md:grid-cols-2 md:gap-10 md:space-y-0"
@@ -205,7 +218,8 @@ const HeaderForm = ({ id, page, setPage }: Props) => {
         </div>
         <div />
         <div className="col-span-2 flex justify-end">
-          <Button type="submit" size="lg">
+          //@ts-ignore
+          <Button type="submit">
             Next
           </Button>
         </div>

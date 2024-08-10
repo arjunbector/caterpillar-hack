@@ -1,8 +1,15 @@
+// use the handle the header queries
+
 "use client"
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const VoiceActivation: React.FC = () => {
+
+type VoiceActivationProps = {
+  onCommand: (command: string) => void;
+};
+
+const VoiceActivation: React.FC<VoiceActivationProps>  = () => {
   const [transcript, setTranscript] = useState<string>('');
   const [isListening, setIsListening] = useState<boolean>(true);
   const [isActivated, setIsActivated] = useState<boolean>(false);
@@ -32,7 +39,7 @@ const VoiceActivation: React.FC = () => {
 
       setTranscript(speechToText);
 
-      if (speechToText.toLowerCase().includes('go to tire section')) {
+      if (speechToText.toLowerCase().includes('Enable voice feature')) {
         setIsActivated(true);
         const utterance = new SpeechSynthesisUtterance('done');
         speechSynthesis.speak(utterance);
@@ -78,8 +85,8 @@ const VoiceActivation: React.FC = () => {
       if (data.command) {
         switch (data.command) {
           case 'go to tire section':
-            console.log("hereeeeeeee")
-            router.push('/tire');
+            
+            router.push('../../src/app/technician/service/');
             break;
           case 'go to about page':
             router.push('/about');
@@ -108,7 +115,7 @@ const VoiceActivation: React.FC = () => {
       {isActivated ? (
         <p>Voice feature activated! You can now proceed with the next action.</p>
       ) : (
-        <p>Listening for the activation phrase: "Hello"</p>
+        <p>Enable voice feature</p>
       )}
       <p>{transcript}</p>
     </div>

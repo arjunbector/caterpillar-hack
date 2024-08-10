@@ -4,6 +4,5 @@ export default function Home() {
  
     <h1>caterpillar</h1>
 
-    <VoiceActivation/>
   </main>;
 }
