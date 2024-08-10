@@ -265,6 +265,7 @@ const TireForm = () => {
               )}
             </div>
             <div>
+                {/* TODO: add images input */}
                 <Label>Add Images</Label>
                 
             </div>
