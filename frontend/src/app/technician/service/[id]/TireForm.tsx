@@ -9,10 +9,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import React, { useState } from "react";
+import { ChevronsUpDown } from "lucide-react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-
-const TireForm = () => {
+type Props = {
+  formData: any;
+  setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCuurentTab: React.Dispatch<React.SetStateAction<string>>;
+};
+const TireForm = ({ formData, setFormData, currentTab, setCuurentTab }: Props) => {
   const {
     register,
     formState: { errors },
@@ -24,10 +30,26 @@ const TireForm = () => {
     leftRear: "OK",
     rightRear: "OK",
   });
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      tire: {
+        ...prev.tire,
+        leftFrontTireCondition: tireConditions.leftFront,
+        rightFrontTireCondition: tireConditions.rightFront,
+        leftRearTireCondition: tireConditions.leftRear,
+        rightRearTireCondition: tireConditions.rightRear,
+      },
+    }));
+  }, [tireConditions]);
+  const handleFormSubmit = (e:any)=>{
+    e.preventDefault();
+    setCuurentTab("battery")
+  }
   return (
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the tire details</h1>
-      <form className="flex flex-col gap-10">
+      <form className="flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <h1 className="my-2 text-lg font-semibold">Tire Pressure</h1>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -37,6 +59,16 @@ const TireForm = () => {
                 {...register("tirePressureLeftFront")}
                 id="tirePressureLeftFront"
                 type="text"
+                value={formData.tire?.tirePressureLeftFront}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureLeftFront: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
             <div>
@@ -45,6 +77,16 @@ const TireForm = () => {
                 {...register("tirePressureRightFront")}
                 id="tirePressureRightFront"
                 type="text"
+                value={formData.tire?.tirePressureRightFront}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureRightFront: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
             <div>
@@ -53,14 +95,33 @@ const TireForm = () => {
                 {...register("tirePressureRightRear")}
                 id="tirePressureRightRear"
                 type="text"
+                value={formData.tire?.tirePressureRightRear}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureRightRear: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
             <div>
-              <Label htmlFor="tirePressureRightRear">Right Rear</Label>
+              <Label htmlFor="tirePressureLeftRear">Right Rear</Label>
               <Input
-                {...register("tirePressureRightRear")}
+                {...register("tirePressureLeftRear")}
                 id="tirePressureRightRear"
                 type="text"
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureLeftRear: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
           </div>
@@ -72,8 +133,12 @@ const TireForm = () => {
               <Label className="mr-2">Left Front: </Label>
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button className="w-52" variant="outline">
+                  <Button
+                    className="flex w-52 items-center justify-between"
+                    variant="outline"
+                  >
                     {tireConditions.leftFront}
+                    <ChevronsUpDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-52">
@@ -117,8 +182,12 @@ const TireForm = () => {
               <Label className="mr-2">Right Front: </Label>
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button className="w-52" variant="outline">
+                  <Button
+                    className="flex w-52 items-center justify-between"
+                    variant="outline"
+                  >
                     {tireConditions.rightFront}
+                    <ChevronsUpDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-52">
@@ -162,8 +231,12 @@ const TireForm = () => {
               <Label className="mr-2">Left Rear: </Label>
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button className="w-52" variant="outline">
+                  <Button
+                    className="flex w-52 items-center justify-between"
+                    variant="outline"
+                  >
                     {tireConditions.leftRear}
+                    <ChevronsUpDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-52">
@@ -207,8 +280,12 @@ const TireForm = () => {
               <Label className="mr-2">Right Rear: </Label>
               <DropdownMenu>
                 <DropdownMenuTrigger>
-                  <Button className="w-52" variant="outline">
+                  <Button
+                    className="flex w-52 items-center justify-between"
+                    variant="outline"
+                  >
                     {tireConditions.rightRear}
+                    <ChevronsUpDown className="h-4 w-4" />
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-52">
@@ -248,8 +325,8 @@ const TireForm = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-            <div className="w-full mt-5">
-              <Label className="font-semibold my-2">Overall Tire Summary</Label>
+            <div className="mt-5 w-full">
+              <Label className="my-2 font-semibold">Overall Tire Summary</Label>
               <Textarea
                 rows={10}
                 placeholder="Max 1000 characters"
@@ -259,18 +336,28 @@ const TireForm = () => {
                     message: "Summary cannot exceed 1000 characters",
                   },
                 })}
+                value={formData.tire?.summary}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      summary: e.target.value,
+                    },
+                  }));
+                }}
               />
               {errors.summary && (
                 <CustomFormError>{errors.summary.message}</CustomFormError>
               )}
             </div>
             <div>
-                {/* TODO: add images input */}
-                <Label>Add Images</Label>
-                
+              {/* TODO: add images input */}
+              <Label>Add Images</Label>
             </div>
           </div>
         </div>
+        <div className="flex justify-end"><Button>Next</Button></div>
       </form>
     </div>
   );

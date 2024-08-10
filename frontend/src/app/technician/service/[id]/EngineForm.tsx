@@ -1,19 +1,52 @@
+import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
-import React, { useState } from "react";
-
-const EngineForm = () => {
+import React, { useEffect, useState } from "react";
+type Props = {
+  formData: any;
+  setFormData: React.Dispatch<React.SetStateAction<any>>;
+  loading: boolean;
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  submitForm: (e: any) => Promise<void>;
+};
+const EngineForm = ({
+  formData,
+  setFormData,
+  loading,
+  setLoading,
+  submitForm,
+}: Props) => {
   const [damage, setDamage] = useState("no");
   const [engineOilCondition, setEngineOilCondition] = useState("Good");
   const [engineOilColor, setEngineOilColor] = useState("Clean");
   const [brakeFluidCondition, setBrakeFluidCondition] = useState("Good");
   const [brakeFluidColor, setBrakeFluidColor] = useState("Clean");
   const [oilLeak, setOilLeak] = useState("no");
-
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      engine: {
+        ...prev.engine,
+        damage,
+        engineOilCondition,
+        engineOilColor,
+        brakeFluidCondition,
+        brakeFluidColor,
+        oilLeak,
+      },
+    }));
+  }, [
+    damage,
+    engineOilCondition,
+    engineOilColor,
+    brakeFluidCondition,
+    brakeFluidColor,
+    oilLeak,
+  ]);
   return (
     <div>
-      <form className="flex flex-col gap-10">
+      <form className="flex flex-col gap-10" onSubmit={submitForm}>
         <div>
           <Label>Rust, Dents or Damage in Engine</Label>
           <RadioGroup
@@ -132,7 +165,21 @@ const EngineForm = () => {
         </div>
         <div>
           <Label htmlFor="summary">Overall Summary</Label>
-          <Textarea id="summary" rows={10} placeholder="Max 1000 characters" />
+          <Textarea
+            value={formData.engine?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                engine: { ...prev.engine, summary: e.target.value },
+              }));
+            }}
+            id="summary"
+            rows={10}
+            placeholder="Max 1000 characters"
+          />
+        </div>
+        <div className="flex justify-end">
+          <Button disabled={loading}>{loading ? "Submitting..." : "Submit"}</Button>
         </div>
       </form>
     </div>
