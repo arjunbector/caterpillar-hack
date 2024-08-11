@@ -3,8 +3,12 @@ import os
 from werkzeug.utils import secure_filename
 import cv2
 import ANPR_Detection
+from flask_cors import CORS  # Import CORS
 
 app = Flask(__name__)
+
+# Enable CORS
+CORS(app)
 
 # Set the upload folder for storing images
 UPLOAD_FOLDER = 'static/cars'
