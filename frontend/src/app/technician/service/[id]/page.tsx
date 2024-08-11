@@ -99,7 +99,7 @@ const ServiceFormPage = ({ params }: Props) => {
       console.log("local", localFormData);
       console.log(localFormData.id);
       console.log(params.id);
-      if (localFormData.id.toString() !== params.id.toString()) return;
+      if (localFormData && localFormData.id&& localFormData.id.toString() !== params.id.toString()) return;
       setFormData(localFormData);
       console.log("done setting form data");
     }

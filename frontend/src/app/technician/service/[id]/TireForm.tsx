@@ -12,6 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { ChevronsUpDown } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import VoiceActivation from "@/app/voicereco";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
@@ -51,9 +52,25 @@ const TireForm = ({
     e.preventDefault();
     setCuurentTab("battery");
   };
+
+  const onSubmit = (data: any) => {
+    //TODO: send data to the server
+    // setPage((prev) => prev + 1);
+    setCuurentTab("tires");
+    console.log(data);
+  };
+
+  const handleVoiceCommand = (command: string) => {
+    // Handle voice commands if needed
+    console.log("Voice command received:", command);
+    if (command.toLowerCase() === "submit") {
+      handleSubmit(onSubmit)();
+    }
+  };
   return (
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the tire details</h1>
+      <VoiceActivation onCommand={handleVoiceCommand} />
       <form className="flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <h1 className="my-2 text-lg font-semibold">Tire Pressure</h1>

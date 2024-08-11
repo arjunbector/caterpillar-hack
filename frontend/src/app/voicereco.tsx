@@ -4,6 +4,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+import { useParams } from 'next/navigation'
 
 type VoiceActivationProps = {
   onCommand: (command: string) => void;
@@ -14,7 +15,12 @@ const VoiceActivation: React.FC<VoiceActivationProps>  = () => {
   const [isListening, setIsListening] = useState<boolean>(true);
   const [isActivated, setIsActivated] = useState<boolean>(false);
   const router = useRouter();
+  const { id } = useParams();
 
+console.log("id",id);
+
+
+  
   useEffect(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     const speechSynthesis = window.speechSynthesis;
@@ -26,6 +32,8 @@ const VoiceActivation: React.FC<VoiceActivationProps>  = () => {
 
     const recognition = new SpeechRecognition();
     recognition.interimResults = true;
+
+   
     recognition.lang = 'en-US';
 
     recognition.onresult = async (event: SpeechRecognitionEvent) => {
@@ -39,7 +47,7 @@ const VoiceActivation: React.FC<VoiceActivationProps>  = () => {
 
       setTranscript(speechToText);
 
-      if (speechToText.toLowerCase().includes('Enable voice feature')) {
+      if (speechToText.toLowerCase().includes('tire')|| speechToText.toLowerCase().includes('battery')) {
         setIsActivated(true);
         const utterance = new SpeechSynthesisUtterance('done');
         speechSynthesis.speak(utterance);
@@ -84,15 +92,15 @@ const VoiceActivation: React.FC<VoiceActivationProps>  = () => {
 
       if (data.command) {
         switch (data.command) {
-          case 'go to tire section':
+          case 'tire':
             
-            router.push('../../src/app/technician/service/');
+             router.replace('/tire');
             break;
-          case 'go to about page':
-            router.push('/about');
+          case 'battery':
+            router.push('/battery');
             break;
-          case 'go to contact page':
-            router.push('/contact');
+          case 'brakes':
+            router.push('/brakes');
             break;
           default:
             const utterance = new SpeechSynthesisUtterance('Command not recognized.');
@@ -115,7 +123,7 @@ const VoiceActivation: React.FC<VoiceActivationProps>  = () => {
       {isActivated ? (
         <p>Voice feature activated! You can now proceed with the next action.</p>
       ) : (
-        <p>Enable voice feature</p>
+        <p>hello</p>
       )}
       <p>{transcript}</p>
     </div>

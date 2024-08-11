@@ -16,7 +16,7 @@ const embeddings = new GoogleGenerativeAIEmbeddings({
   apiKey: 'AIzaSyCU_G6smtnj13fxZYat_lnIpeVDVRr7y8w', // Use environment variables for security
 });
 
-const commands = ['hello', 'go to header section', 'go to about page', 'go to contact page', 'go to tire section'];
+const commands = ['hello', 'go to header section', 'go to about page', 'go to contact page', 'tire', 'battery','engine','brakes','exterior'];
 
 async function initializePinecone() {
   try {
