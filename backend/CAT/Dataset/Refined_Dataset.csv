@@ -1,0 +1,1001 @@
+Machine,Component,Parameter,Value,Probability of Failure,Status
+Excavator_1,Engine,Temparature,104.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,70.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,104.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,231.0,0.155,Low Risk
+Excavator_1,Engine,Oil Pressure,39.0,0.1,Low Risk
+Dozer_1,Fuel,Temparature,215.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,202.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,2.0,1.0,High Risk
+Excavator_1,Drive,Pedal Sensor,4.533982405902761,0.03532289236111469,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.9,0.17021276595744686,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,190.0,0.1,Low Risk
+Excavator_1,Misc,Exhaust Gas Temparature,195.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,2.0,1.0,High Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,3.0564368045602506,0.3496942969020744,Medium Risk
+Excavator_1,Misc,Air Filter Pressure,34.0,0.7,High Risk
+Excavator_1,Misc,System Voltage,12.411252795359877,0.034271066279989736,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,332.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,1315.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,51.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,55.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,91.0,0.272,Low Risk
+Articulated_Truck_1,Engine,Speed,1345.0,0.25277777777777777,Low Risk
+Excavator_1,Drive,Transmission Pressure,263.0,0.315,Medium Risk
+Excavator_1,Misc,Exhaust Gas Temparature,312.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Speed,1750.0,0.027777777777777776,Low Risk
+Excavator_1,Engine,Speed,1779.0,0.011666666666666667,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.762040191170272,0.013200040674525989,Low Risk
+Backhoe_Loader_1,Fuel,Level,6.0,5.0,High Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,262.0,0.31,Medium Risk
+Excavator_1,Misc,Exhaust Gas Temparature,304.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.9,0.17021276595744686,Low Risk
+Articulated_Truck_1,Engine,Speed,1590.0,0.11666666666666667,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,30.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.827011927454973,0.027023814352121873,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,109.0,0.128,Low Risk
+Excavator_1,Drive,Transmission Pressure,403.0,0.10444444444444445,Low Risk
+Dozer_1,Engine,Speed,1580.0,0.12222222222222222,Low Risk
+Excavator_1,Drive,Transmission Pressure,203.0,0.015,Low Risk
+Excavator_1,Fuel,Pressure,44.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Dozer_1,Engine,Oil Pressure,48.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1434.0,0.20333333333333334,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,4.6,0.021276595744680965,Low Risk
+Dozer_1,Misc,System Voltage,12.246072784540505,0.020506065378375442,Low Risk
+Dozer_1,Engine,Speed,1665.0,0.075,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,198.0,0.1,Low Risk
+Excavator_1,Engine,Oil Pressure,29.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,2.0,1.0,High Risk
+Dozer_1,Drive,Brake Control,10.0,9.0,High Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,3.1420432072351505,0.33148016867337227,Medium Risk
+Dozer_1,Drive,Transmission Pressure,249.0,0.245,Low Risk
+Excavator_1,Fuel,Water in Fuel,413.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1300.0,0.1,Low Risk
+Dozer_1,Drive,Brake Control,1.0,0.0,Low Risk
+Excavator_1,Engine,Temparature,93.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,222.0,0.11,Low Risk
+Excavator_1,Fuel,Water in Fuel,1047.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,371.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1724.0,0.042222222222222223,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.557899218348005,0.030234208862126553,Low Risk
+Excavator_1,Drive,Transmission Pressure,374.0,0.1688888888888889,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,225.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,35.0,0.75,High Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1230.0,0.1,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,96.0,0.232,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,36.0,0.8,High Risk
+Dozer_1,Fuel,Water in Fuel,348.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,2.0,1.0,High Risk
+Excavator_1,Engine,Oil Pressure,59.0,0.1,Low Risk
+Dozer_1,Engine,Oil Pressure,61.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Speed,1800.0,0.0,Low Risk
+Excavator_1,Engine,Speed,1593.0,0.115,Low Risk
+Excavator_1,Drive,Transmission Pressure,255.0,0.275,Low Risk
+Articulated_Truck_1,Misc,System Voltage,15.1,0.006666666666666643,Low Risk
+Dozer_1,Engine,Temparature,104.0,0.1,Low Risk
+Dozer_1,Drive,Brake Control,3.0,2.0,High Risk
+Excavator_1,Fuel,Temparature,300.0,0.1,Low Risk
+Excavator_1,Fuel,Pressure,43.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,144.0,0.1,Low Risk
+Excavator_1,Engine,Temparature,75.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,253.0,0.265,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,291.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,14.780763097085265,0.014615793527649027,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,354.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,450.0,0.0,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,118.0,0.056,Low Risk
+Excavator_1,Fuel,Level,10.0,9.0,High Risk
+Dozer_1,Drive,Transmission Pressure,435.0,0.03333333333333333,Low Risk
+Dozer_1,Fuel,Pressure,54.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,4.0,3.0,High Risk
+Excavator_1,Drive,Brake Control,8.0,7.0,High Risk
+Excavator_1,Engine,Speed,1712.0,0.04888888888888889,Low Risk
+Excavator_1,Misc,Air Filter Pressure,31.0,0.55,Medium Risk
+Dozer_1,Engine,Oil Pressure,54.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,300.0,0.3333333333333333,Medium Risk
+Dozer_1,Engine,Temparature,89.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,1179.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,369.0,0.18,Low Risk
+Articulated_Truck_1,Engine,Speed,1650.0,0.08333333333333333,Low Risk
+Dozer_1,Misc,Air Filter Pressure,21.0,0.05,Low Risk
+Excavator_1,Fuel,Pressure,37.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,93.0,0.1,Low Risk
+Dozer_1,Misc,Air Filter Pressure,26.0,0.3,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,321.0,0.2866666666666667,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,300.0,0.1,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,119.0,0.048,Low Risk
+Excavator_1,Engine,Speed,1760.0,0.022222222222222223,Low Risk
+Articulated_Truck_1,Fuel,Level,9.0,8.0,High Risk
+Backhoe_Loader_1,Misc,System Voltage,14.354209407795604,0.043052706146959704,Low Risk
+Excavator_1,Fuel,Pressure,37.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,210.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,26.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,2.0,1.0,High Risk
+Excavator_1,Misc,Air Filter Pressure,22.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,79.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,23.0,0.15,Low Risk
+Backhoe_Loader_1,Engine,Speed,1744.0,0.03111111111111111,Low Risk
+Articulated_Truck_1,Misc,System Voltage,13.3,0.10833333333333339,Low Risk
+Backhoe_Loader_1,Engine,Speed,1422.0,0.21,Low Risk
+Articulated_Truck_1,Misc,System Voltage,14.7,0.02000000000000005,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,393.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,199.0,0.1,Low Risk
+Dozer_1,Misc,Air Filter Pressure,20.0,0.0,Low Risk
+Dozer_1,Fuel,Water in Fuel,231.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,87.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,33.0,0.65,Medium Risk
+Excavator_1,Misc,Hydraulic Pump Rate,102.0,0.184,Low Risk
+Excavator_1,Drive,Brake Control,7.0,6.0,High Risk
+Excavator_1,Fuel,Temparature,295.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,23.0,0.15,Low Risk
+Dozer_1,Engine,Temparature,89.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1398.0,0.22333333333333333,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,377.0,0.1622222222222222,Low Risk
+Articulated_Truck_1,Drive,Brake Control,3.0,2.0,High Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Dozer_1,Engine,Oil Pressure,50.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,119.0,0.048,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,119.0,0.048,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,265.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,337.0,0.2511111111111111,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1785.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1398.0,0.22333333333333333,Low Risk
+Dozer_1,Engine,Oil Pressure,50.0,0.1,Low Risk
+Dozer_1,Engine,Temparature,95.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,55.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1456.0,0.19111111111111112,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,39.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,100.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,27.0,0.35,Medium Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,297.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,64.0,0.1,Low Risk
+Excavator_1,Fuel,Pressure,35.0,0.1,Low Risk
+Dozer_1,Fuel,Level,6.0,5.0,High Risk
+Dozer_1,Fuel,Level,3.0,2.0,High Risk
+Dozer_1,Fuel,Level,5.0,4.0,High Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,125.0,0.1,Low Risk
+Dozer_1,Fuel,Level,2.0,1.0,High Risk
+Backhoe_Loader_1,Drive,Brake Control,8.0,7.0,High Risk
+Excavator_1,Drive,Pedal Sensor,3.72617889354469,0.20719598009687454,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,404.0,0.10222222222222223,Low Risk
+Dozer_1,Drive,Pedal Sensor,4.984918787063702,0.060621018524191814,Low Risk
+Excavator_1,Misc,Exhaust Gas Temparature,348.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,96.0,0.232,Low Risk
+Articulated_Truck_1,Engine,Speed,1700.0,0.05555555555555555,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.542305510145011,0.03355201911808272,Low Risk
+Dozer_1,Fuel,Temparature,298.0,0.1,Low Risk
+Excavator_1,Misc,Air Filter Pressure,20.0,0.0,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,23.0,0.15,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,110.0,0.12,Low Risk
+Excavator_1,Misc,System Voltage,13.760612448135802,0.08262583679094651,Low Risk
+Articulated_Truck_1,Engine,Speed,1455.0,0.19166666666666668,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,120.0,0.04,Low Risk
+Excavator_1,Misc,Air Filter Pressure,35.0,0.75,High Risk
+Dozer_1,Engine,Temparature,89.0,0.1,Low Risk
+Excavator_1,Fuel,Pressure,45.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,80.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,44.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,29.0,0.45,Medium Risk
+Articulated_Truck_1,Fuel,Pressure,62.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,60.0,0.1,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,92.0,0.264,Low Risk
+Dozer_1,Misc,Air Filter Pressure,31.0,0.55,Medium Risk
+Articulated_Truck_1,Misc,System Voltage,14.9,0.006666666666666643,Low Risk
+Backhoe_Loader_1,Engine,Temparature,93.0,0.1,Low Risk
+Excavator_1,Drive,Transmission Pressure,443.0,0.015555555555555555,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,111.0,0.112,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,9.0,8.0,High Risk
+Dozer_1,Drive,Brake Control,2.0,1.0,High Risk
+Dozer_1,Drive,Transmission Pressure,444.0,0.013333333333333334,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,375.0,0.16666666666666666,Low Risk
+Backhoe_Loader_1,Engine,Speed,1666.0,0.07444444444444444,Low Risk
+Articulated_Truck_1,Drive,Brake Control,4.0,3.0,High Risk
+Dozer_1,Fuel,Water in Fuel,1210.0,0.1,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,353.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Level,9.0,8.0,High Risk
+Excavator_1,Engine,Temparature,92.0,0.1,Low Risk
+Dozer_1,Engine,Oil Pressure,64.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,9.0,8.0,High Risk
+Excavator_1,Misc,Exhaust Gas Temparature,345.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,316.0,0.1,Low Risk
+Excavator_1,Fuel,Water in Fuel,263.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,40.0,0.1,Low Risk
+Excavator_1,Fuel,Level,3.0,2.0,High Risk
+Articulated_Truck_1,Engine,Oil Pressure,65.0,0.1,Low Risk
+Dozer_1,Drive,Pedal Sensor,3.632488490834493,0.22713010833308664,Low Risk
+Dozer_1,Drive,Brake Control,7.0,6.0,High Risk
+Excavator_1,Fuel,Level,6.0,5.0,High Risk
+Excavator_1,Drive,Transmission Pressure,275.0,0.375,Medium Risk
+Excavator_1,Misc,Exhaust Gas Temparature,240.0,0.1,Low Risk
+Excavator_1,Fuel,Level,6.0,5.0,High Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,27.0,0.35,Medium Risk
+Dozer_1,Misc,Exhaust Gas Temparature,368.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,112.0,0.1,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.769654221016504,0.01482004702478801,Low Risk
+Dozer_1,Drive,Brake Control,10.0,9.0,High Risk
+Backhoe_Loader_1,Engine,Temparature,93.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,1031.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,385.0,0.14444444444444443,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,115.0,0.08,Low Risk
+Excavator_1,Fuel,Level,9.0,8.0,High Risk
+Excavator_1,Engine,Speed,1683.0,0.065,Low Risk
+Dozer_1,Drive,Pedal Sensor,3.654081298210941,0.22253589399767215,Low Risk
+Excavator_1,Fuel,Temparature,389.0,0.1,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,228.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,29.0,0.45,Medium Risk
+Articulated_Truck_1,Fuel,Level,7.0,6.0,High Risk
+Backhoe_Loader_1,Drive,Brake Control,8.0,7.0,High Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,3.8075987083108767,0.189872615253005,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,46.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,265.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1581.0,0.12166666666666667,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.7,0.2127659574468085,Low Risk
+Excavator_1,Drive,Transmission Pressure,274.0,0.37,Medium Risk
+Articulated_Truck_1,Drive,Transmission Pressure,337.0,0.2511111111111111,Low Risk
+Articulated_Truck_1,Fuel,Level,4.0,3.0,High Risk
+Dozer_1,Drive,Pedal Sensor,4.2380008735038635,0.09829768648853973,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,376.0,0.16444444444444445,Low Risk
+Excavator_1,Drive,Pedal Sensor,3.2723528870797076,0.30375470487665795,Medium Risk
+Dozer_1,Engine,Temparature,89.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,44.0,0.1,Low Risk
+Excavator_1,Engine,Oil Pressure,58.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,364.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,1491.0,0.1,Low Risk
+Dozer_1,Misc,System Voltage,13.417613669912043,0.10549242200586377,Low Risk
+Dozer_1,Drive,Brake Control,5.0,4.0,High Risk
+Excavator_1,Fuel,Level,4.0,3.0,High Risk
+Dozer_1,Misc,Hydraulic Pump Rate,120.0,0.04,Low Risk
+Dozer_1,Misc,Air Filter Pressure,34.0,0.7,High Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,82.0,0.344,Medium Risk
+Excavator_1,Drive,Brake Control,1.0,0.0,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,49.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,27.0,0.35,Medium Risk
+Dozer_1,Fuel,Temparature,377.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,4.5,0.042553191489361736,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,123.0,0.016,Low Risk
+Excavator_1,Fuel,Temparature,260.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Speed,1470.0,0.18333333333333332,Low Risk
+Excavator_1,Engine,Temparature,79.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Speed,1640.0,0.08888888888888889,Low Risk
+Excavator_1,Fuel,Level,9.0,8.0,High Risk
+Dozer_1,Engine,Speed,1558.0,0.13444444444444445,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,15.032346707895526,0.0021564471930350495,Low Risk
+Dozer_1,Engine,Oil Pressure,38.0,0.1,Low Risk
+Dozer_1,Fuel,Temparature,247.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,13.52453023046626,0.09836465130224935,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,256.0,0.28,Low Risk
+Articulated_Truck_1,Fuel,Pressure,44.0,0.1,Low Risk
+Excavator_1,Engine,Oil Pressure,41.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,14.996014571623977,0.0002656952250681854,Low Risk
+Articulated_Truck_1,Fuel,Level,4.0,3.0,High Risk
+Excavator_1,Misc,Exhaust Gas Temparature,213.0,0.1,Low Risk
+Dozer_1,Misc,System Voltage,14.998739239093917,8.405072707221943e-05,Low Risk
+Dozer_1,Engine,Oil Pressure,62.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,387.0,0.1,Low Risk
+Excavator_1,Engine,Oil Pressure,60.0,0.1,Low Risk
+Dozer_1,Drive,Pedal Sensor,3.869027293045341,0.17680270360737432,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,309.0,0.1,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,124.0,0.008,Low Risk
+Dozer_1,Engine,Oil Pressure,25.0,0.1,Low Risk
+Excavator_1,Drive,Transmission Pressure,363.0,0.19333333333333333,Low Risk
+Excavator_1,Fuel,Temparature,352.0,0.1,Low Risk
+Excavator_1,Misc,System Voltage,15.152016856790821,0.010134457119388074,Low Risk
+Excavator_1,Fuel,Water in Fuel,422.0,0.1,Low Risk
+Dozer_1,Drive,Pedal Sensor,3.1649636071146836,0.3266034878479397,Medium Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,95.0,0.24,Low Risk
+Excavator_1,Drive,Brake Control,9.0,8.0,High Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,433.0,0.03777777777777778,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1697.0,0.1,Low Risk
+Excavator_1,Drive,Brake Control,4.0,3.0,High Risk
+Excavator_1,Engine,Temparature,87.0,0.1,Low Risk
+Excavator_1,Drive,Transmission Pressure,397.0,0.11777777777777777,Low Risk
+Dozer_1,Drive,Pedal Sensor,4.4610482187501335,0.050840804521248235,Low Risk
+Dozer_1,Engine,Oil Pressure,43.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Pressure,59.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,47.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,177.0,0.1,Low Risk
+Dozer_1,Fuel,Temparature,308.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Level,5.0,4.0,High Risk
+Articulated_Truck_1,Fuel,Water in Fuel,119.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.6,0.23404255319148937,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,57.0,0.1,Low Risk
+Excavator_1,Drive,Transmission Pressure,381.0,0.15333333333333332,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,13.625255295664392,0.09164964695570722,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,73.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,291.0,0.35333333333333333,Medium Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,34.0,0.7,High Risk
+Excavator_1,Engine,Speed,1664.0,0.07555555555555556,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,36.0,0.1,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,108.0,0.136,Low Risk
+Dozer_1,Engine,Oil Pressure,26.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.929791054327954,0.04889171368679877,Low Risk
+Excavator_1,Misc,Exhaust Gas Temparature,262.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,90.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Speed,1600.0,0.1111111111111111,Low Risk
+Dozer_1,Fuel,Water in Fuel,1368.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,3.0,2.0,High Risk
+Articulated_Truck_1,Fuel,Level,9.0,8.0,High Risk
+Excavator_1,Fuel,Water in Fuel,434.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,5.0,4.0,High Risk
+Dozer_1,Fuel,Pressure,55.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,8.0,7.0,High Risk
+Dozer_1,Drive,Transmission Pressure,348.0,0.22666666666666666,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,182.0,0.1,Low Risk
+Excavator_1,Fuel,Temparature,318.0,0.1,Low Risk
+Excavator_1,Fuel,Level,2.0,1.0,High Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,3.1069008611983167,0.33895726357482625,Medium Risk
+Dozer_1,Drive,Transmission Pressure,264.0,0.32,Medium Risk
+Dozer_1,Misc,System Voltage,12.540437363800695,0.045036446983391265,Low Risk
+Excavator_1,Engine,Temparature,93.0,0.1,Low Risk
+Excavator_1,Fuel,Pressure,36.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,2.0,1.0,High Risk
+Dozer_1,Fuel,Level,7.0,6.0,High Risk
+Excavator_1,Fuel,Water in Fuel,140.0,0.1,Low Risk
+Dozer_1,Engine,Temparature,103.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,219.0,0.095,Low Risk
+Articulated_Truck_1,Engine,Speed,1700.0,0.05555555555555555,Low Risk
+Dozer_1,Misc,System Voltage,13.410000498905488,0.10599996673963415,Low Risk
+Excavator_1,Misc,System Voltage,12.28242957918222,0.023535798265184926,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.4822843986025775,0.04632246838243034,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.8,0.19148936170212774,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,377.0,0.1622222222222222,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,30.0,0.5,Medium Risk
+Excavator_1,Fuel,Pressure,50.0,0.1,Low Risk
+Dozer_1,Drive,Pedal Sensor,3.9289472748863457,0.16405377130077756,Low Risk
+Backhoe_Loader_1,Engine,Speed,1435.0,0.20277777777777778,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.577743538243144,0.026012013139756596,Low Risk
+Backhoe_Loader_1,Fuel,Level,5.0,4.0,High Risk
+Excavator_1,Engine,Oil Pressure,37.0,0.1,Low Risk
+Excavator_1,Fuel,Water in Fuel,1760.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,3.0617349309108577,0.3485670359764133,Medium Risk
+Excavator_1,Drive,Transmission Pressure,280.0,0.37777777777777777,Medium Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,117.0,0.064,Low Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.2,0.3191489361702127,Medium Risk
+Excavator_1,Engine,Oil Pressure,40.0,0.1,Low Risk
+Dozer_1,Drive,Pedal Sensor,4.432169639072472,0.05698518317606976,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,105.0,0.16,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,122.0,0.024,Low Risk
+Backhoe_Loader_1,Fuel,Level,8.0,7.0,High Risk
+Dozer_1,Misc,Hydraulic Pump Rate,85.0,0.32,Medium Risk
+Dozer_1,Misc,Air Filter Pressure,31.0,0.55,Medium Risk
+Excavator_1,Drive,Brake Control,3.0,2.0,High Risk
+Articulated_Truck_1,Fuel,Pressure,71.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,49.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,106.0,0.152,Low Risk
+Backhoe_Loader_1,Engine,Temparature,75.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,246.0,0.23,Low Risk
+Dozer_1,Engine,Oil Pressure,28.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,36.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,56.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1654.0,0.0811111111111111,Low Risk
+Excavator_1,Engine,Oil Pressure,58.0,0.1,Low Risk
+Dozer_1,Engine,Temparature,91.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Level,6.0,5.0,High Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,22.0,0.1,Low Risk
+Excavator_1,Misc,Air Filter Pressure,23.0,0.15,Low Risk
+Excavator_1,Misc,Air Filter Pressure,22.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,102.0,0.1,Low Risk
+Excavator_1,Engine,Speed,1541.0,0.1438888888888889,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.8810940412429344,0.03853064707296474,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,85.0,0.32,Medium Risk
+Dozer_1,Engine,Temparature,91.0,0.1,Low Risk
+Excavator_1,Fuel,Temparature,287.0,0.1,Low Risk
+Excavator_1,Misc,System Voltage,13.280011451894348,0.10666762099119564,Low Risk
+Excavator_1,Drive,Pedal Sensor,3.8632688178265253,0.17802791110073932,Low Risk
+Articulated_Truck_1,Fuel,Level,7.0,6.0,High Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,298.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,4.2,0.10638297872340426,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,347.0,0.1,Low Risk
+Dozer_1,Drive,Pedal Sensor,3.69778036117471,0.2132382210266575,Low Risk
+Articulated_Truck_1,Fuel,Pressure,56.0,0.1,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,77.0,0.384,Medium Risk
+Excavator_1,Drive,Pedal Sensor,4.333722979542163,0.07793128094847604,Low Risk
+Dozer_1,Misc,System Voltage,13.252056310856487,0.10433802590470724,Low Risk
+Articulated_Truck_1,Engine,Speed,1870.0,0.03888888888888889,Low Risk
+Excavator_1,Fuel,Level,3.0,2.0,High Risk
+Backhoe_Loader_1,Misc,System Voltage,15.050989505374654,0.0033993003583102422,Low Risk
+Articulated_Truck_1,Misc,System Voltage,12.6,0.04999999999999997,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,32.0,0.6,Medium Risk
+Excavator_1,Fuel,Temparature,348.0,0.1,Low Risk
+Excavator_1,Drive,Brake Control,10.0,9.0,High Risk
+Excavator_1,Drive,Pedal Sensor,3.6859181203855815,0.215762102045621,Low Risk
+Articulated_Truck_1,Misc,System Voltage,14.8,0.013333333333333286,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,176.0,0.1,Low Risk
+Excavator_1,Drive,Transmission Pressure,274.0,0.37,Medium Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,35.0,0.75,High Risk
+Dozer_1,Drive,Pedal Sensor,4.784579445403493,0.017995626681594146,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,210.0,0.05,Low Risk
+Dozer_1,Engine,Temparature,95.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,302.0,0.3288888888888889,Medium Risk
+Dozer_1,Drive,Brake Control,5.0,4.0,High Risk
+Articulated_Truck_1,Fuel,Pressure,49.0,0.1,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,366.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1390.0,0.22777777777777777,Low Risk
+Excavator_1,Engine,Speed,1573.0,0.12611111111111112,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1325.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,1369.0,0.1,Low Risk
+Dozer_1,Engine,Oil Pressure,52.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,8.0,7.0,High Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,27.0,0.35,Medium Risk
+Dozer_1,Fuel,Water in Fuel,1737.0,0.1,Low Risk
+Dozer_1,Fuel,Temparature,326.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,86.0,0.1,Low Risk
+Dozer_1,Drive,Pedal Sensor,4.690052669430663,0.002116453312625023,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.988576675088139,0.06139929257194449,Low Risk
+Dozer_1,Fuel,Level,3.0,2.0,High Risk
+Articulated_Truck_1,Engine,Speed,1250.0,0.3055555555555556,Medium Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,240.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,25.0,0.1,Low Risk
+Dozer_1,Drive,Brake Control,6.0,5.0,High Risk
+Dozer_1,Engine,Speed,1497.0,0.16833333333333333,Low Risk
+Excavator_1,Misc,Air Filter Pressure,27.0,0.35,Medium Risk
+Backhoe_Loader_1,Fuel,Level,5.0,4.0,High Risk
+Excavator_1,Drive,Brake Control,8.0,7.0,High Risk
+Backhoe_Loader_1,Engine,Temparature,90.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,82.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1434.0,0.20333333333333334,Low Risk
+Backhoe_Loader_1,Fuel,Level,6.0,5.0,High Risk
+Dozer_1,Fuel,Temparature,212.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,267.0,0.335,Medium Risk
+Backhoe_Loader_1,Drive,Brake Control,6.0,5.0,High Risk
+Excavator_1,Drive,Brake Control,4.0,3.0,High Risk
+Articulated_Truck_1,Misc,System Voltage,14.1,0.060000000000000026,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,80.0,0.36,Medium Risk
+Excavator_1,Drive,Pedal Sensor,4.883191370481606,0.038976887336511945,Low Risk
+Dozer_1,Drive,Transmission Pressure,394.0,0.12444444444444444,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.882826368874091,0.03889922742001931,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,113.0,0.096,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,65.0,0.1,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,117.0,0.064,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,220.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,275.0,0.375,Medium Risk
+Dozer_1,Engine,Oil Pressure,33.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,82.0,0.344,Medium Risk
+Dozer_1,Misc,Air Filter Pressure,26.0,0.3,Low Risk
+Excavator_1,Fuel,Water in Fuel,1439.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Level,6.0,5.0,High Risk
+Articulated_Truck_1,Engine,Oil Pressure,67.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,97.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,75.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,450.0,0.0,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,56.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1521.0,0.155,Low Risk
+Excavator_1,Drive,Brake Control,7.0,6.0,High Risk
+Articulated_Truck_1,Fuel,Level,3.0,2.0,High Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,210.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,402.0,0.10666666666666667,Low Risk
+Dozer_1,Fuel,Level,7.0,6.0,High Risk
+Dozer_1,Misc,System Voltage,14.37954839497905,0.04136344033472999,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,216.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,10.0,9.0,High Risk
+Dozer_1,Misc,Air Filter Pressure,31.0,0.55,Medium Risk
+Excavator_1,Engine,Temparature,95.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,82.0,0.344,Medium Risk
+Excavator_1,Fuel,Level,9.0,8.0,High Risk
+Articulated_Truck_1,Fuel,Level,3.0,2.0,High Risk
+Backhoe_Loader_1,Fuel,Pressure,49.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,33.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,78.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,42.0,0.1,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.827448942272162,0.027116796228119543,Low Risk
+Articulated_Truck_1,Engine,Temparature,75.0,0.1,Low Risk
+Excavator_1,Misc,System Voltage,13.642271875126,0.09051520832493339,Low Risk
+Dozer_1,Fuel,Level,8.0,7.0,High Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,176.0,0.1,Low Risk
+Excavator_1,Drive,Transmission Pressure,323.0,0.2822222222222222,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.682924179967196,0.0036331531984690425,Low Risk
+Dozer_1,Engine,Speed,1364.0,0.24222222222222223,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,45.0,0.1,Low Risk
+Excavator_1,Engine,Temparature,75.0,0.1,Low Risk
+Excavator_1,Fuel,Temparature,355.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1687.0,0.06277777777777778,Low Risk
+Backhoe_Loader_1,Fuel,Level,5.0,4.0,High Risk
+Articulated_Truck_1,Drive,Pedal Sensor,4.4,0.0638297872340425,Low Risk
+Dozer_1,Engine,Speed,1488.0,0.17333333333333334,Low Risk
+Excavator_1,Engine,Speed,1377.0,0.235,Low Risk
+Backhoe_Loader_1,Engine,Speed,1475.0,0.18055555555555555,Low Risk
+Excavator_1,Engine,Oil Pressure,39.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,1337.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Speed,1560.0,0.13333333333333333,Low Risk
+Articulated_Truck_1,Engine,Speed,1550.0,0.1388888888888889,Low Risk
+Excavator_1,Fuel,Temparature,398.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,217.0,0.1,Low Risk
+Excavator_1,Engine,Speed,1644.0,0.08666666666666667,Low Risk
+Dozer_1,Engine,Speed,1771.0,0.01611111111111111,Low Risk
+Excavator_1,Drive,Brake Control,9.0,8.0,High Risk
+Articulated_Truck_1,Drive,Brake Control,3.0,2.0,High Risk
+Articulated_Truck_1,Engine,Temparature,100.0,0.1,Low Risk
+Dozer_1,Drive,Brake Control,5.0,4.0,High Risk
+Backhoe_Loader_1,Engine,Speed,1341.0,0.255,Low Risk
+Dozer_1,Fuel,Pressure,52.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,14.286194759007277,0.047587016066181556,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,25.0,0.25,Low Risk
+Articulated_Truck_1,Fuel,Pressure,67.0,0.1,Low Risk
+Dozer_1,Fuel,Level,3.0,2.0,High Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,98.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,81.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,82.0,0.1,Low Risk
+Excavator_1,Fuel,Temparature,297.0,0.1,Low Risk
+Dozer_1,Fuel,Level,2.0,1.0,High Risk
+Articulated_Truck_1,Drive,Brake Control,4.0,3.0,High Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Articulated_Truck_1,Misc,System Voltage,13.1,0.09166666666666663,Low Risk
+Dozer_1,Drive,Brake Control,7.0,6.0,High Risk
+Dozer_1,Drive,Brake Control,5.0,4.0,High Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,90.0,0.28,Low Risk
+Excavator_1,Misc,Air Filter Pressure,22.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Level,4.0,3.0,High Risk
+Excavator_1,Drive,Pedal Sensor,3.5503867230755426,0.24459856955839523,Low Risk
+Dozer_1,Fuel,Level,6.0,5.0,High Risk
+Backhoe_Loader_1,Fuel,Temparature,224.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,377.0,0.1622222222222222,Low Risk
+Excavator_1,Drive,Brake Control,9.0,8.0,High Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,22.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1385.0,0.23055555555555557,Low Risk
+Excavator_1,Misc,System Voltage,13.207512486493865,0.10062604054115543,Low Risk
+Excavator_1,Engine,Oil Pressure,36.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,36.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.9,0.17021276595744686,Low Risk
+Dozer_1,Fuel,Temparature,382.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,13.714329101849293,0.08571139321004714,Low Risk
+Articulated_Truck_1,Misc,System Voltage,15.2,0.013333333333333286,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,447.0,0.006666666666666667,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,363.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,6.0,5.0,High Risk
+Dozer_1,Drive,Pedal Sensor,3.0382190282704906,0.3535704195169169,Medium Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,180.0,0.1,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,112.0,0.104,Low Risk
+Excavator_1,Drive,Brake Control,5.0,4.0,High Risk
+Dozer_1,Fuel,Pressure,48.0,0.1,Low Risk
+Excavator_1,Drive,Brake Control,7.0,6.0,High Risk
+Excavator_1,Engine,Oil Pressure,32.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1530.0,0.15,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,45.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,56.0,0.1,Low Risk
+Excavator_1,Misc,Air Filter Pressure,29.0,0.45,Medium Risk
+Excavator_1,Engine,Temparature,91.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,75.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Pressure,44.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,340.0,0.1,Low Risk
+Dozer_1,Fuel,Pressure,37.0,0.1,Low Risk
+Excavator_1,Engine,Speed,1455.0,0.19166666666666668,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,292.0,0.3511111111111111,Medium Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,223.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,250.0,0.25,Low Risk
+Excavator_1,Engine,Oil Pressure,53.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Speed,1340.0,0.25555555555555554,Low Risk
+Dozer_1,Fuel,Pressure,58.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1445.0,0.19722222222222222,Low Risk
+Articulated_Truck_1,Fuel,Level,10.0,9.0,High Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,293.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Level,6.0,5.0,High Risk
+Dozer_1,Drive,Pedal Sensor,3.519238045364715,0.2512259477947415,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1400.0,0.1,Low Risk
+Excavator_1,Misc,Air Filter Pressure,25.0,0.25,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.6,0.23404255319148937,Low Risk
+Excavator_1,Misc,System Voltage,14.333381495415518,0.04444123363896549,Low Risk
+Excavator_1,Fuel,Water in Fuel,461.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,72.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,4.4,0.0638297872340425,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.6,0.23404255319148937,Low Risk
+Excavator_1,Engine,Speed,1523.0,0.15388888888888888,Low Risk
+Excavator_1,Misc,Exhaust Gas Temparature,306.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,12.52320098294241,0.04360008191186745,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,376.0,0.1,Low Risk
+Articulated_Truck_1,Misc,System Voltage,12.7,0.05833333333333327,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,3.8030472784239073,0.19084100459065806,Low Risk
+Dozer_1,Drive,Brake Control,7.0,6.0,High Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,120.0,0.04,Low Risk
+Excavator_1,Drive,Transmission Pressure,399.0,0.11333333333333333,Low Risk
+Backhoe_Loader_1,Fuel,Level,8.0,7.0,High Risk
+Excavator_1,Misc,Exhaust Gas Temparature,312.0,0.1,Low Risk
+Excavator_1,Fuel,Water in Fuel,544.0,0.1,Low Risk
+Excavator_1,Misc,System Voltage,15.529580349828434,0.03530535665522893,Low Risk
+Excavator_1,Fuel,Pressure,53.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1429.0,0.2061111111111111,Low Risk
+Dozer_1,Misc,System Voltage,13.867436233290086,0.0755042511139943,Low Risk
+Excavator_1,Engine,Speed,1712.0,0.04888888888888889,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,31.0,0.55,Medium Risk
+Excavator_1,Engine,Oil Pressure,37.0,0.1,Low Risk
+Excavator_1,Misc,Exhaust Gas Temparature,310.0,0.1,Low Risk
+Dozer_1,Fuel,Water in Fuel,286.0,0.1,Low Risk
+Excavator_1,Drive,Brake Control,1.0,0.0,Low Risk
+Dozer_1,Drive,Brake Control,5.0,4.0,High Risk
+Articulated_Truck_1,Fuel,Water in Fuel,448.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,398.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,25.0,0.25,Low Risk
+Excavator_1,Fuel,Level,7.0,6.0,High Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,289.0,0.35777777777777775,Medium Risk
+Dozer_1,Engine,Temparature,100.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Pressure,72.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Temparature,94.0,0.1,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,94.0,0.248,Low Risk
+Excavator_1,Drive,Transmission Pressure,406.0,0.09777777777777778,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,495.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,6.0,5.0,High Risk
+Excavator_1,Fuel,Water in Fuel,1072.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,366.0,0.18666666666666668,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,50.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,181.0,0.1,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,347.0,0.1,Low Risk
+Excavator_1,Engine,Oil Pressure,60.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,117.0,0.064,Low Risk
+Dozer_1,Engine,Speed,1529.0,0.15055555555555555,Low Risk
+Excavator_1,Engine,Speed,1419.0,0.21166666666666667,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,14.954554326862477,0.0030297115425015637,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,65.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,3.53667605834637,0.24751573226672985,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,250.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,349.0,0.22444444444444445,Low Risk
+Dozer_1,Misc,Air Filter Pressure,26.0,0.3,Low Risk
+Excavator_1,Fuel,Water in Fuel,1647.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,102.0,0.1,Low Risk
+Dozer_1,Misc,System Voltage,15.260973471318461,0.017398231421230766,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,88.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,223.0,0.115,Low Risk
+Backhoe_Loader_1,Engine,Speed,1585.0,0.11944444444444445,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,4.4,0.0638297872340425,Low Risk
+Backhoe_Loader_1,Engine,Speed,1394.0,0.22555555555555556,Low Risk
+Dozer_1,Fuel,Pressure,47.0,0.1,Low Risk
+Excavator_1,Misc,Air Filter Pressure,35.0,0.75,High Risk
+Articulated_Truck_1,Engine,Oil Pressure,44.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,95.0,0.1,Low Risk
+Excavator_1,Engine,Speed,1515.0,0.15833333333333333,Low Risk
+Excavator_1,Fuel,Pressure,52.0,0.1,Low Risk
+Excavator_1,Fuel,Water in Fuel,1643.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,286.0,0.36444444444444446,Medium Risk
+Dozer_1,Drive,Transmission Pressure,271.0,0.355,Medium Risk
+Dozer_1,Misc,System Voltage,14.27821704253774,0.04811886383081732,Low Risk
+Excavator_1,Misc,System Voltage,12.016341002811957,0.0013617502343297911,Low Risk
+Backhoe_Loader_1,Fuel,Level,5.0,4.0,High Risk
+Articulated_Truck_1,Drive,Brake Control,7.0,6.0,High Risk
+Excavator_1,Fuel,Level,2.0,1.0,High Risk
+Dozer_1,Engine,Temparature,89.0,0.1,Low Risk
+Dozer_1,Engine,Speed,1357.0,0.2461111111111111,Low Risk
+Dozer_1,Fuel,Water in Fuel,287.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,14.708348856156524,0.019443409589565044,Low Risk
+Dozer_1,Drive,Pedal Sensor,4.694670306093528,0.0011339774269090257,Low Risk
+Articulated_Truck_1,Fuel,Level,5.0,4.0,High Risk
+Articulated_Truck_1,Misc,System Voltage,13.7,0.08666666666666671,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.409465608938223,0.061815827885484426,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,61.0,0.1,Low Risk
+Dozer_1,Misc,System Voltage,14.400077739731234,0.039994817351251065,Low Risk
+Backhoe_Loader_1,Misc,System Voltage,15.823136274805755,0.05487575165371699,Low Risk
+Articulated_Truck_1,Engine,Temparature,94.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Oil Pressure,45.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,300.0,0.3333333333333333,Medium Risk
+Excavator_1,Engine,Oil Pressure,26.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,31.0,0.55,Medium Risk
+Articulated_Truck_1,Drive,Transmission Pressure,443.0,0.015555555555555555,Low Risk
+Articulated_Truck_1,Misc,Air Filter Pressure,23.0,0.15,Low Risk
+Dozer_1,Drive,Brake Control,8.0,7.0,High Risk
+Backhoe_Loader_1,Engine,Oil Pressure,57.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Air Filter Pressure,25.0,0.25,Low Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,118.0,0.056,Low Risk
+Articulated_Truck_1,Drive,Brake Control,8.0,7.0,High Risk
+Excavator_1,Misc,System Voltage,12.714092622213577,0.059507718517798125,Low Risk
+Dozer_1,Fuel,Temparature,372.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Water in Fuel,184.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,272.0,0.36,Medium Risk
+Articulated_Truck_1,Fuel,Pressure,46.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,83.0,0.336,Medium Risk
+Articulated_Truck_1,Fuel,Water in Fuel,426.0,0.1,Low Risk
+Articulated_Truck_1,Misc,System Voltage,14.4,0.03999999999999997,Low Risk
+Articulated_Truck_1,Engine,Speed,1650.0,0.08333333333333333,Low Risk
+Excavator_1,Drive,Brake Control,8.0,7.0,High Risk
+Backhoe_Loader_1,Fuel,Pressure,47.0,0.1,Low Risk
+Dozer_1,Fuel,Level,2.0,1.0,High Risk
+Dozer_1,Engine,Speed,1310.0,0.2722222222222222,Low Risk
+Backhoe_Loader_1,Engine,Speed,1765.0,0.019444444444444445,Low Risk
+Dozer_1,Drive,Pedal Sensor,4.1007537194492745,0.12749920862781397,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,116.0,0.072,Low Risk
+Excavator_1,Fuel,Level,7.0,6.0,High Risk
+Articulated_Truck_1,Engine,Oil Pressure,35.0,0.1,Low Risk
+Dozer_1,Misc,Air Filter Pressure,31.0,0.55,Medium Risk
+Excavator_1,Engine,Oil Pressure,42.0,0.1,Low Risk
+Excavator_1,Engine,Temparature,79.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,8.0,7.0,High Risk
+Backhoe_Loader_1,Fuel,Level,4.0,3.0,High Risk
+Dozer_1,Drive,Brake Control,2.0,1.0,High Risk
+Dozer_1,Fuel,Temparature,253.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1342.0,0.1,Low Risk
+Dozer_1,Fuel,Pressure,48.0,0.1,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,90.0,0.28,Low Risk
+Backhoe_Loader_1,Fuel,Level,6.0,5.0,High Risk
+Articulated_Truck_1,Drive,Brake Control,4.0,3.0,High Risk
+Dozer_1,Misc,Exhaust Gas Temparature,244.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,211.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,48.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,5.0,4.0,High Risk
+Backhoe_Loader_1,Drive,Brake Control,4.0,3.0,High Risk
+Backhoe_Loader_1,Engine,Speed,1352.0,0.24888888888888888,Low Risk
+Excavator_1,Engine,Temparature,81.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,59.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,85.0,0.32,Medium Risk
+Articulated_Truck_1,Fuel,Water in Fuel,120.0,0.1,Low Risk
+Excavator_1,Engine,Speed,1648.0,0.08444444444444445,Low Risk
+Excavator_1,Misc,System Voltage,15.19257242900969,0.012838161933979346,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,344.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,37.0,0.1,Low Risk
+Dozer_1,Drive,Transmission Pressure,328.0,0.27111111111111114,Low Risk
+Dozer_1,Drive,Brake Control,9.0,8.0,High Risk
+Excavator_1,Engine,Oil Pressure,43.0,0.1,Low Risk
+Excavator_1,Fuel,Water in Fuel,276.0,0.1,Low Risk
+Dozer_1,Misc,System Voltage,15.014178900447844,0.000945260029856243,Low Risk
+Dozer_1,Engine,Oil Pressure,41.0,0.1,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.2597192407396935,0.09367675728942694,Low Risk
+Backhoe_Loader_1,Fuel,Temparature,243.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Pressure,56.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Pedal Sensor,3.7,0.2127659574468085,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,3.0,2.0,High Risk
+Dozer_1,Misc,System Voltage,14.719444354190909,0.01870370972060608,Low Risk
+Excavator_1,Drive,Transmission Pressure,354.0,0.21333333333333335,Low Risk
+Excavator_1,Misc,System Voltage,12.425671506354378,0.03547262552953153,Low Risk
+Excavator_1,Misc,Hydraulic Pump Rate,125.0,0.0,Low Risk
+Excavator_1,Drive,Brake Control,5.0,4.0,High Risk
+Backhoe_Loader_1,Fuel,Level,6.0,5.0,High Risk
+Articulated_Truck_1,Drive,Brake Control,7.0,6.0,High Risk
+Backhoe_Loader_1,Fuel,Temparature,329.0,0.1,Low Risk
+Dozer_1,Fuel,Temparature,258.0,0.1,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,87.0,0.304,Medium Risk
+Backhoe_Loader_1,Engine,Temparature,94.0,0.1,Low Risk
+Dozer_1,Engine,Temparature,85.0,0.1,Low Risk
+Excavator_1,Engine,Speed,1443.0,0.19833333333333333,Low Risk
+Backhoe_Loader_1,Drive,Brake Control,10.0,9.0,High Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,190.0,0.1,Low Risk
+Dozer_1,Fuel,Level,8.0,7.0,High Risk
+Dozer_1,Engine,Temparature,89.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,391.0,0.13111111111111112,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,1655.0,0.1,Low Risk
+Dozer_1,Fuel,Pressure,43.0,0.1,Low Risk
+Dozer_1,Misc,Hydraulic Pump Rate,79.0,0.368,Medium Risk
+Articulated_Truck_1,Fuel,Water in Fuel,424.0,0.1,Low Risk
+Excavator_1,Misc,Exhaust Gas Temparature,270.0,0.1,Low Risk
+Dozer_1,Misc,Air Filter Pressure,28.0,0.4,Medium Risk
+Excavator_1,Engine,Temparature,80.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,8.0,7.0,High Risk
+Backhoe_Loader_1,Fuel,Pressure,51.0,0.1,Low Risk
+Articulated_Truck_1,Engine,Temparature,92.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,51.0,0.1,Low Risk
+Excavator_1,Misc,Exhaust Gas Temparature,359.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,38.0,0.1,Low Risk
+Excavator_1,Fuel,Level,9.0,8.0,High Risk
+Articulated_Truck_1,Engine,Temparature,78.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Exhaust Gas Temparature,205.0,0.1,Low Risk
+Articulated_Truck_1,Misc,Exhaust Gas Temparature,222.0,0.1,Low Risk
+Backhoe_Loader_1,Engine,Speed,1720.0,0.044444444444444446,Low Risk
+Backhoe_Loader_1,Drive,Pedal Sensor,4.36001650764642,0.0723369132667192,Low Risk
+Articulated_Truck_1,Misc,System Voltage,14.9,0.006666666666666643,Low Risk
+Articulated_Truck_1,Misc,Hydraulic Pump Rate,122.0,0.024,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,76.0,0.392,Medium Risk
+Backhoe_Loader_1,Fuel,Temparature,302.0,0.1,Low Risk
+Dozer_1,Engine,Oil Pressure,53.0,0.1,Low Risk
+Dozer_1,Misc,Air Filter Pressure,26.0,0.3,Low Risk
+Articulated_Truck_1,Engine,Speed,1440.0,0.2,Low Risk
+Dozer_1,Fuel,Level,2.0,1.0,High Risk
+Dozer_1,Fuel,Pressure,38.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Level,1.0,0.0,Low Risk
+Articulated_Truck_1,Drive,Transmission Pressure,335.0,0.25555555555555554,Low Risk
+Dozer_1,Fuel,Pressure,40.0,0.1,Low Risk
+Articulated_Truck_1,Drive,Brake Control,5.0,4.0,High Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Pressure,59.0,0.1,Low Risk
+Backhoe_Loader_1,Drive,Transmission Pressure,412.0,0.08444444444444445,Low Risk
+Dozer_1,Engine,Oil Pressure,45.0,0.1,Low Risk
+Excavator_1,Drive,Pedal Sensor,4.8165667133854075,0.024801428379873907,Low Risk
+Backhoe_Loader_1,Engine,Oil Pressure,41.0,0.1,Low Risk
+Excavator_1,Engine,Temparature,104.0,0.1,Low Risk
+Dozer_1,Misc,Exhaust Gas Temparature,202.0,0.1,Low Risk
+Excavator_1,Engine,Speed,1755.0,0.025,Low Risk
+Dozer_1,Engine,Oil Pressure,39.0,0.1,Low Risk
+Articulated_Truck_1,Fuel,Temparature,0.0,0.1,Low Risk
+Backhoe_Loader_1,Fuel,Water in Fuel,283.0,0.1,Low Risk
+Backhoe_Loader_1,Misc,Hydraulic Pump Rate,88.0,0.296,Low Risk
+Excavator_1,Fuel,Pressure,45.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,395.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1391.0,0.22722222222222221,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,26.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,99.0,0.208,Low Risk
+Asphalt_Paver_1,Engine,Temparature,78.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,372.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,13.98,0.06799999999999998,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,59.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,10.0,9.0,High Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,4.77,0.014893617021276466,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,88.0,0.296,Low Risk
+Asphalt_Paver_1,Engine,Speed,1362.0,0.24333333333333335,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,117.0,0.064,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,259.0,0.295,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,283.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,826.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,1413.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,288.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,2.0,1.0,High Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,4.95,0.05319148936170213,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,398.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1300.0,0.2777777777777778,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,14.79,0.014000000000000058,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,117.0,0.064,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,22.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Pressure,37.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,924.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1424.0,0.2088888888888889,Low Risk
+Asphalt_Paver_1,Engine,Speed,1554.0,0.13666666666666666,Low Risk
+Asphalt_Paver_1,Engine,Speed,1481.0,0.17722222222222223,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,5.0,4.0,High Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,77.0,0.384,Medium Risk
+Asphalt_Paver_1,Engine,Temparature,87.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Temparature,86.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,97.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,7.0,6.0,High Risk
+Asphalt_Paver_1,Fuel,Temparature,279.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,272.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,416.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,200.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Temparature,87.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Pressure,60.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1421.0,0.21055555555555555,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,221.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,2.0,1.0,High Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,113.0,0.096,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,282.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,384.0,0.14666666666666667,Low Risk
+Asphalt_Paver_1,Engine,Speed,1538.0,0.14555555555555555,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,59.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Temparature,102.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,4.28,0.08936170212765955,Low Risk
+Asphalt_Paver_1,Fuel,Level,2.0,1.0,High Risk
+Asphalt_Paver_1,Misc,System Voltage,13.01,0.08416666666666665,Low Risk
+Asphalt_Paver_1,Engine,Speed,1736.0,0.035555555555555556,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,203.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,40.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,13.22,0.10166666666666672,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.68,0.2170212765957447,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,27.0,0.35,Medium Risk
+Asphalt_Paver_1,Fuel,Pressure,58.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Pressure,45.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,378.0,0.16,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,25.0,0.25,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,887.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1661.0,0.07722222222222222,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,249.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,980.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Pressure,45.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,4.0,3.0,High Risk
+Asphalt_Paver_1,Engine,Speed,1340.0,0.25555555555555554,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,110.0,0.12,Low Risk
+Asphalt_Paver_1,Engine,Temparature,98.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Temparature,77.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,46.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,10.0,9.0,High Risk
+Asphalt_Paver_1,Engine,Oil Pressure,32.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,14.84,0.010666666666666677,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,33.0,0.65,Medium Risk
+Asphalt_Paver_1,Drive,Brake Control,3.0,2.0,High Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.73,0.20638297872340428,Low Risk
+Asphalt_Paver_1,Engine,Speed,1331.0,0.26055555555555554,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,708.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Pressure,58.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,6.0,5.0,High Risk
+Asphalt_Paver_1,Drive,Brake Control,4.0,3.0,High Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,427.0,0.051111111111111114,Low Risk
+Asphalt_Paver_1,Engine,Temparature,101.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,243.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,14.31,0.045999999999999965,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,56.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Temparature,90.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,622.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,4.63,0.014893617021276655,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,10.0,9.0,High Risk
+Asphalt_Paver_1,Misc,System Voltage,15.42,0.027999999999999994,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,58.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,61.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,9.0,8.0,High Risk
+Asphalt_Paver_1,Engine,Speed,1597.0,0.11277777777777778,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,15.84,0.05599999999999999,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,8.0,7.0,High Risk
+Asphalt_Paver_1,Engine,Temparature,87.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Pressure,56.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,24.0,0.2,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,35.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,6.0,5.0,High Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,341.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,13.01,0.08416666666666665,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,62.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,4.36,0.07234042553191486,Low Risk
+Asphalt_Paver_1,Fuel,Level,4.0,3.0,High Risk
+Asphalt_Paver_1,Engine,Speed,1726.0,0.04111111111111111,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,100.0,0.2,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,61.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,7.0,6.0,High Risk
+Asphalt_Paver_1,Engine,Temparature,75.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,8.0,7.0,High Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.79,0.19361702127659577,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,3.0,2.0,High Risk
+Asphalt_Paver_1,Misc,System Voltage,12.92,0.07666666666666666,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,34.0,0.7,High Risk
+Asphalt_Paver_1,Fuel,Pressure,65.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,5.0,4.0,High Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,539.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,50.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,270.0,0.35,Medium Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,206.0,0.03,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,249.0,0.245,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.59,0.2361702127659575,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,383.0,0.14888888888888888,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,1161.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Temparature,77.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,51.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,124.0,0.008,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,323.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,6.0,5.0,High Risk
+Asphalt_Paver_1,Fuel,Pressure,42.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,4.0,3.0,High Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,259.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,226.0,0.13,Low Risk
+Asphalt_Paver_1,Engine,Temparature,105.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1709.0,0.050555555555555555,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,88.0,0.296,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,293.0,0.3488888888888889,Medium Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,1444.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1622.0,0.09888888888888889,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,124.0,0.008,Low Risk
+Asphalt_Paver_1,Fuel,Water in Fuel,776.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,13.11,0.09249999999999996,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,15.7,0.04666666666666662,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.81,0.1893617021276596,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,23.0,0.15,Low Risk
+Asphalt_Paver_1,Engine,Speed,1484.0,0.17555555555555555,Low Risk
+Asphalt_Paver_1,Engine,Oil Pressure,49.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,4.2,0.10638297872340426,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,398.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Pressure,65.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,338.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,2.0,1.0,High Risk
+Asphalt_Paver_1,Engine,Oil Pressure,29.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.83,0.18510638297872342,Low Risk
+Asphalt_Paver_1,Fuel,Level,10.0,9.0,High Risk
+Asphalt_Paver_1,Engine,Oil Pressure,58.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Hydraulic Pump Rate,84.0,0.328,Medium Risk
+Asphalt_Paver_1,Engine,Oil Pressure,34.0,0.1,Low Risk
+Asphalt_Paver_1,Engine,Speed,1594.0,0.11444444444444445,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,7.0,6.0,High Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,295.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,437.0,0.028888888888888888,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,10.0,9.0,High Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,387.0,0.14,Low Risk
+Asphalt_Paver_1,Misc,System Voltage,14.99,0.0006666666666666524,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.12,0.33617021276595743,Medium Risk
+Asphalt_Paver_1,Fuel,Pressure,61.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,5.0,4.0,High Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,281.0,0.37555555555555553,Medium Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,232.0,0.16,Low Risk
+Asphalt_Paver_1,Drive,Brake Control,2.0,1.0,High Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,306.0,0.32,Medium Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,4.61,0.019148936170212735,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,291.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,32.0,0.6,Medium Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.06,0.34893617021276596,Medium Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,303.0,0.32666666666666666,Medium Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,22.0,0.1,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,237.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,6.0,5.0,High Risk
+Asphalt_Paver_1,Fuel,Temparature,394.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Pedal Sensor,3.78,0.1957446808510639,Low Risk
+Asphalt_Paver_1,Fuel,Temparature,383.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,1.0,0.0,Low Risk
+Asphalt_Paver_1,Engine,Temparature,81.0,0.1,Low Risk
+Asphalt_Paver_1,Drive,Transmission Pressure,332.0,0.26222222222222225,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,20.0,0.0,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,263.0,0.1,Low Risk
+Asphalt_Paver_1,Fuel,Level,7.0,6.0,High Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,23.0,0.15,Low Risk
+Asphalt_Paver_1,Misc,Air Filter Pressure,26.0,0.3,Low Risk
+Asphalt_Paver_1,Misc,Exhaust Gas Temparature,195.0,0.1,Low Risk
