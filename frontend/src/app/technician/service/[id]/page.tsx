@@ -74,7 +74,7 @@ const ServiceFormPage = ({ params }: Props) => {
       summary: "",
     },
     engine: {
-      damage:"",
+      damage: "",
       engineOilCondition: "",
       engineOilColor: "",
       brakeFluidCondition: "",
@@ -116,7 +116,9 @@ const ServiceFormPage = ({ params }: Props) => {
     try {
       setLoading(true);
       console.log("sending data = ", formData);
-      const res = await axios.post(`/api/form/${params.id}`, formData);
+      const res = await axios.post(`/api/form/${params.id}`, {
+        sections: { ...formData },
+      });
       if (res.status === 200) {
         setLoading(false);
         toast.success("Form submitted successfully");
