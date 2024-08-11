@@ -10,13 +10,20 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { ChevronsUpDown } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCuurentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const TireForm = ({ formData, setFormData }: Props) => {
+const TireForm = ({
+  formData,
+  setFormData,
+  currentTab,
+  setCuurentTab,
+}: Props) => {
   const {
     register,
     formState: { errors },
@@ -28,10 +35,26 @@ const TireForm = ({ formData, setFormData }: Props) => {
     leftRear: "OK",
     rightRear: "OK",
   });
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      tire: {
+        ...prev.tire,
+        leftFrontTireCondition: tireConditions.leftFront,
+        rightFrontTireCondition: tireConditions.rightFront,
+        leftRearTireCondition: tireConditions.leftRear,
+        rightRearTireCondition: tireConditions.rightRear,
+      },
+    }));
+  }, [tireConditions]);
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+    setCuurentTab("battery");
+  };
   return (
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the tire details</h1>
-      <form className="flex flex-col gap-10">
+      <form className="flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <h1 className="my-2 text-lg font-semibold">Tire Pressure</h1>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -41,6 +64,16 @@ const TireForm = ({ formData, setFormData }: Props) => {
                 {...register("tirePressureLeftFront")}
                 id="tirePressureLeftFront"
                 type="text"
+                value={formData.tire?.tirePressureLeftFront}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureLeftFront: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
             <div>
@@ -49,6 +82,16 @@ const TireForm = ({ formData, setFormData }: Props) => {
                 {...register("tirePressureRightFront")}
                 id="tirePressureRightFront"
                 type="text"
+                value={formData.tire?.tirePressureRightFront}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureRightFront: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
             <div>
@@ -57,14 +100,33 @@ const TireForm = ({ formData, setFormData }: Props) => {
                 {...register("tirePressureRightRear")}
                 id="tirePressureRightRear"
                 type="text"
+                value={formData.tire?.tirePressureRightRear}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureRightRear: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
             <div>
-              <Label htmlFor="tirePressureRightRear">Right Rear</Label>
+              <Label htmlFor="tirePressureLeftRear">Right Rear</Label>
               <Input
-                {...register("tirePressureRightRear")}
+                {...register("tirePressureLeftRear")}
                 id="tirePressureRightRear"
                 type="text"
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      tirePressureLeftRear: e.target.value,
+                    },
+                  }));
+                }}
               />
             </div>
           </div>
@@ -279,6 +341,16 @@ const TireForm = ({ formData, setFormData }: Props) => {
                     message: "Summary cannot exceed 1000 characters",
                   },
                 })}
+                value={formData.tire?.summary}
+                onChange={(e) => {
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    tire: {
+                      ...prev.tire,
+                      summary: e.target.value,
+                    },
+                  }));
+                }}
               />
               {errors.summary && (
                 <CustomFormError>{errors.summary.message}</CustomFormError>
@@ -289,6 +361,17 @@ const TireForm = ({ formData, setFormData }: Props) => {
               <Label>Add Images</Label>
             </div>
           </div>
+        </div>
+        <div className="flex justify-end gap-5">
+          <Button
+            variant="secondary"
+            onClick={() => {
+              setCuurentTab("header");
+            }}
+          >
+            Back
+          </Button>
+          <Button type="submit">Next</Button>
         </div>
       </form>
     </div>

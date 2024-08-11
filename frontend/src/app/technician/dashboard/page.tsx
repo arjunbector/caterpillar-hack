@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/table";
 import { formatDate } from "@/lib/utils";
 import { serviceType } from "@/types/types";
+import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -22,12 +23,17 @@ const TechnicianDashboardPage = () => {
   const [services, setServices] = useState<serviceType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState(null);
+  console.log(services);
   const getData = async () => {
     setError(null);
     setLoading(true);
     try {
       //TODO: make api call
-      setServices(dummyServices);
+      const res = await axios.get("/api/dashboard");
+      if (res.status === 200) {
+        setServices(res.data);
+        console.log(res.data);
+      }
     } catch (err: any) {
       console.log(err);
       setError(err);
@@ -61,10 +67,10 @@ const TechnicianDashboardPage = () => {
                 <TableBody>
                   {services.map((service, idx) => (
                     <TableRow
-                      key={service.id}
+                      key={service._id}
                       className="cursor-pointer"
                       onClick={() => {
-                        handleClick(service.id);
+                        handleClick(service._id!.toString());
                       }}
                     >
                       <TableCell className="px-10">{service.name}</TableCell>

@@ -1,14 +1,22 @@
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCurrentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const ExteriorForm = ({ formData, setFormData }: Props) => {
+const ExteriorForm = ({
+  formData,
+  setFormData,
+  currentTab,
+  setCurrentTab,
+}: Props) => {
   const {
     register,
     formState: { errors },
@@ -16,9 +24,25 @@ const ExteriorForm = ({ formData, setFormData }: Props) => {
   } = useForm({ mode: "all" });
   const [damage, setDamage] = useState("no");
   const [oilLeak, setOilLeak] = useState("no");
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      exterior: {
+        ...prev.exterior,
+        damage,
+        oilLeak,
+      },
+    }));
+  }, [damage, oilLeak]);
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+    setCurrentTab("brakes");
+  };
   return (
     <div>
-      <form className="my-10 flex flex-col gap-10">
+      <h1 className="mt-10 text-3xl font-bold">Enter the exterior details</h1>
+
+      <form className="my-10 flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <Label>
             Rust, Dent or Damage to Exterior:{" "}
@@ -62,7 +86,29 @@ const ExteriorForm = ({ formData, setFormData }: Props) => {
         </div>
         <div>
           <Label htmlFor="summary">Overall Summary</Label>
-          <Textarea id="summary" rows={10} placeholder="Max 1000 characters" />
+          <Textarea
+            value={formData.exterior?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                exterior: { ...prev.exterior, summary: e.target.value },
+              }));
+            }}
+            id="summary"
+            rows={10}
+            placeholder="Max 1000 characters"
+          />
+        </div>
+        <div className="flex justify-end gap-5">
+          <Button
+            variant="secondary"
+            onClick={() => {
+              setCurrentTab("battery");
+            }}
+          >
+            Back
+          </Button>
+          <Button type="submit">Next</Button>
         </div>
       </form>
     </div>

@@ -8,20 +8,48 @@ import {
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { ChevronsUpDown } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCurrentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const BrakesForm = ({ formData, setFormData }: Props) => {
+const BrakesForm = ({
+  formData,
+  setFormData,
+  currentTab,
+  setCurrentTab,
+}: Props) => {
   const [brakeFluidLevel, setBrakeFluidLevel] = useState("Good");
   const [brakeConditionFront, setBrakeConditionFront] = useState("Good");
   const [brakeConditionRear, setBrakeConditionRear] = useState("Good");
   const [emergencyBrake, setEmergencyBrake] = useState("Good");
-
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      brakes: {
+        ...prev.brakes,
+        brakeFluidLevel,
+        brakeConditionFront,
+        brakeConditionRear,
+        emergencyBrake,
+      },
+    }));
+  }, [
+    brakeFluidLevel,
+    brakeConditionFront,
+    brakeConditionRear,
+    emergencyBrake,
+  ]);
+  const handleFormSubmit = (e: any) => {
+    e.preventDefault();
+    setCurrentTab("engine");
+  };
   return (
     <div>
-      <form className="my-10 flex flex-col gap-10">
+      <h1 className="mt-10 text-3xl font-bold">Enter the brakes details</h1>
+      <form className="my-10 flex flex-col gap-10" onSubmit={handleFormSubmit}>
         <div>
           <Label className="mr-2">Brake Fluid Level: </Label>
           <DropdownMenu>
@@ -184,7 +212,29 @@ const BrakesForm = ({ formData, setFormData }: Props) => {
         </div>
         <div>
           <Label htmlFor="summary">Overall Summary</Label>
-          <Textarea id="summary" rows={10} placeholder="Max 1000 characters" />
+          <Textarea
+            value={formData.brakes?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                brakes: { ...prev.brakes, summary: e.target.value },
+              }));
+            }}
+            id="summary"
+            rows={10}
+            placeholder="Max 1000 characters"
+          />
+        </div>
+        <div className="flex justify-end gap-5">
+          <Button
+            variant="secondary"
+            onClick={() => {
+              setCurrentTab("exterior");
+            }}
+          >
+            Back
+          </Button>
+          <Button type="submit">Next</Button>
         </div>
       </form>
     </div>

@@ -10,13 +10,20 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { ChevronsUpDown } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 type Props = {
   formData: any;
   setFormData: React.Dispatch<React.SetStateAction<any>>;
+  currentTab: string;
+  setCurrentTab: React.Dispatch<React.SetStateAction<string>>;
 };
-const BatteryForm = ({ formData, setFormData }: Props) => {
+const BatteryForm = ({
+  formData,
+  setFormData,
+  currentTab,
+  setCurrentTab,
+}: Props) => {
   const {
     register,
     formState: { errors },
@@ -25,9 +32,26 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
   const [waterLevel, setWaterLevel] = useState("Good");
   const [batteryDamage, setBatteryDamage] = useState("no");
   const [batteryLeak, setBatteryLeak] = useState("no");
+  useEffect(() => {
+    setFormData((prev: any) => ({
+      ...prev,
+      battery: {
+        ...prev.battery,
+        waterLevel,
+        batteryDamage,
+        batteryLeak,
+      },
+    }));
+  }, [waterLevel, batteryDamage, batteryLeak]);
+  const handleFormSubmit = (e:any) => {
+    e.preventDefault();
+    setCurrentTab("exterior");
+  };
   return (
     <div>
-      <form className="my-10 flex flex-col gap-5">
+      <h1 className="mt-10 text-3xl font-bold">Enter the battery details</h1>
+
+      <form className="my-10 flex flex-col gap-5" onSubmit={handleFormSubmit}>
         <div>
           <Label htmlFor="batteryMake">Battery Make</Label>
           <Input
@@ -35,6 +59,13 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             id="batteryMake"
             placeholder="Ex: CAT"
             type="text"
+            value={formData.battery?.batteryMake}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: { ...prev.battery, batteryMake: e.target.value },
+              }));
+            }}
           />
         </div>
         <div>
@@ -45,6 +76,16 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             {...register("batteryReplacementDate")}
             id="batteryReplacementDate"
             type="date"
+            value={formData.battery?.batteryReplacementDate}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: {
+                  ...prev.battery,
+                  batteryReplacementDate: e.target.value,
+                },
+              }));
+            }}
           />
         </div>
         <div>
@@ -53,6 +94,13 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             {...register("batteryVoltage")}
             id="batteryVoltage"
             type="text"
+            value={formData.battery?.batteryVoltage}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: { ...prev.battery, batteryVoltage: e.target.value },
+              }));
+            }}
           />
         </div>
         <div>
@@ -139,7 +187,18 @@ const BatteryForm = ({ formData, setFormData }: Props) => {
             {...register("summary")}
             rows={10}
             placeholder="Max 1000 characters"
+            value={formData.battery?.summary}
+            onChange={(e) => {
+              setFormData((prev: any) => ({
+                ...prev,
+                battery: { ...prev.battery, summary: e.target.value },
+              }));
+            }}
           />
+        </div>
+        <div className="flex justify-end gap-5">
+          <Button variant="secondary" onClick={()=>{setCurrentTab("tires")}}>Back</Button>
+          <Button type="submit">Next</Button>
         </div>
       </form>
     </div>
