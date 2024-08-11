@@ -2,8 +2,16 @@ import { Button } from "@/components/ui/button";
 import CustomFormError from "@/components/ui/custom-form-error";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import React, {
+  Dispatch,
+  SetStateAction,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useForm } from "react-hook-form";
+import { Camera } from "react-camera-pro";
+import axios from "axios";
 
 type Props = {
   id: string;
@@ -25,6 +33,9 @@ const HeaderForm = ({
   setCuurentTab,
 }: Props) => {
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
+  const camera = useRef(null);
+  const [image, setImage] = useState(null);
+  const [showCamera, setShowCamera] = useState(false);
 
   useEffect(() => {
     if ("geolocation" in navigator) {
@@ -52,7 +63,17 @@ const HeaderForm = ({
     setCuurentTab("tires");
     console.log(data);
   };
+  const sendImage = async (image: any) => {
+    try {
+      const res = await axios.post("http://127.0.0.1:5000", image);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
+  useEffect(() => {
+    if (image) sendImage(image);
+  }, [image]);
   return (
     <div className="mx-auto">
       <h1 className="mt-10 text-3xl font-bold">Enter the basic details</h1>
@@ -300,6 +321,35 @@ const HeaderForm = ({
             Next
           </Button>
         </div>
+        {/* <div>
+          <Label>Add Images</Label>
+          <Input type="file" multiple/>
+        </div> */}
+        <Button
+          onClick={(e) => {
+            e.preventDefault();
+            setShowCamera(true);
+          }}
+        >
+          Add picture
+        </Button>
+        {showCamera && (
+          <div>
+            <Camera ref={camera} />
+            <Button
+              variant="secondary"
+              onClick={(e) => {
+                e.preventDefault();
+                setImage(camera?.current?.takePhoto());
+                setShowCamera(false);
+              }}
+            >
+              Take photo
+            </Button>
+            <img src={image} alt="Taken photo" />
+          </div>
+        )}
+        {image && <img src={image} alt="Taken photo" />}
       </form>
     </div>
   );

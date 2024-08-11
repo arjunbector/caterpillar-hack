@@ -11,6 +11,8 @@ import EngineForm from "./EngineForm";
 import { useRouter, useSearchParams } from "next/navigation";
 import axios from "axios";
 import { toast } from "sonner";
+import { MessageCircleCodeIcon } from "lucide-react";
+import Link from "next/link";
 type Props = {
   params: {
     id: string;
@@ -214,6 +216,9 @@ const ServiceFormPage = ({ params }: Props) => {
             submitForm={submitForm}
           />
         )}
+        <Link href="http://localhost:8501/" className="bg-primary fixed bottom-4 right-4 rounded-full p-4 shadow-lg">
+          <MessageCircleCodeIcon className="h-10 w-10 shrink-0"/>
+        </Link>
       </MaxWidthWrapper>
     </main>
   );
