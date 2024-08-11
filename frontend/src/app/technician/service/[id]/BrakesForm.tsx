@@ -7,9 +7,13 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { ChevronsUpDown } from "lucide-react";
 import { useState } from "react";
-
-const BrakesForm = () => {
+type Props = {
+  formData: any;
+  setFormData: React.Dispatch<React.SetStateAction<any>>;
+};
+const BrakesForm = ({ formData, setFormData }: Props) => {
   const [brakeFluidLevel, setBrakeFluidLevel] = useState("Good");
   const [brakeConditionFront, setBrakeConditionFront] = useState("Good");
   const [brakeConditionRear, setBrakeConditionRear] = useState("Good");
@@ -22,8 +26,12 @@ const BrakesForm = () => {
           <Label className="mr-2">Brake Fluid Level: </Label>
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <Button className="w-52" variant="outline">
+              <Button
+                className="flex w-52 items-center justify-between"
+                variant="outline"
+              >
                 {brakeFluidLevel}
+                <ChevronsUpDown className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-52">
@@ -58,8 +66,12 @@ const BrakesForm = () => {
           <Label className="mr-2">Brake Condition for front: </Label>
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <Button className="w-52" variant="outline">
+              <Button
+                className="flex w-52 items-center justify-between"
+                variant="outline"
+              >
                 {brakeConditionFront}
+                <ChevronsUpDown className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-52">
@@ -94,8 +106,12 @@ const BrakesForm = () => {
           <Label className="mr-2">Brake Condition for rear: </Label>
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <Button className="w-52" variant="outline">
+              <Button
+                className="flex w-52 items-start justify-between"
+                variant="outline"
+              >
                 {brakeConditionRear}
+                <ChevronsUpDown className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-52">
@@ -130,8 +146,12 @@ const BrakesForm = () => {
           <Label className="mr-2">Emergency Brake: </Label>
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <Button className="w-52" variant="outline">
+              <Button
+                className="flex w-52 items-center justify-between"
+                variant="outline"
+              >
                 {emergencyBrake}
+                <ChevronsUpDown className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-52">

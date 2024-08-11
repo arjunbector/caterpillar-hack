@@ -9,10 +9,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
+import { ChevronsUpDown } from "lucide-react";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
-const BatteryForm = () => {
+type Props = {
+  formData: any;
+  setFormData: React.Dispatch<React.SetStateAction<any>>;
+};
+const BatteryForm = ({ formData, setFormData }: Props) => {
   const {
     register,
     formState: { errors },
@@ -55,8 +59,12 @@ const BatteryForm = () => {
           <Label className="mr-2">Battery Water Level: </Label>
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <Button className="w-52" variant="outline">
+              <Button
+                className="flex w-52 items-center justify-between"
+                variant="outline"
+              >
                 {waterLevel}
+                <ChevronsUpDown className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-52">
